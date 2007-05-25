@@ -1,10 +1,10 @@
 ==== Post Avatar ====
-Contributors: Vicky Arulsingam and Dominik Menke
+Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0
 Tested up to: 2.1.2
-Stable tag: trunk
+Stable tag: 1.2.2
 
 Choose an avatar from a pre-defined list to include in a post. 
 
