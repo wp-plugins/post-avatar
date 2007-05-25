@@ -53,15 +53,15 @@ This plugin simplifies including a picture when writing posts by allowing the us
 = Usage =
 **A. UPLOAD IMAGES**
 	
-	Upload the images that you intend to use to the folder defined in the Post Avatar options.
+Upload the images that you intend to use to the folder defined in the Post Avatar options.
 
 
 **B. ADDING AN AVATAR TO A POST**
 
-	1. To add an image to a post, go to the Post Avatar section (just below the Save button).
+1. To add an image to a post, go to the Post Avatar section (just below the Save button).
 
-	2. Select the image name from the list. 
+2. Select the image name from the list. 
 
-	3. Save your entry.
+3. Save your entry.
 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
