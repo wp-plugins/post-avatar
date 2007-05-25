@@ -4,7 +4,7 @@ Donate link:
 Tags: post, avatars, images
 Requires at least: 2.0
 Tested up to: 2.1.2
-Stable tag: 1.2.2
+Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
 
