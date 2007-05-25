@@ -9,7 +9,7 @@ Stable tag: 1.2.2
 Choose an avatar from a pre-defined list to include in a post. 
 
 == Description == 
-This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://wordpress.gaw2006.de)
+This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://wordpress.gaw2006.de).
 
 = Features =
 * Easy selection of images in the Write Post screen.
