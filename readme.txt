@@ -1,5 +1,5 @@
 ==== Post Avatar ====
-Contributors: Vicky Arulsingam and Dominik Menke
+Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0
