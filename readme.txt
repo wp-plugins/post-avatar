@@ -64,4 +64,4 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 	3. Save your entry.
 
-Please visit the [Post Avatar Page] (http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
+Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
