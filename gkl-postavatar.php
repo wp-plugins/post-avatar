@@ -2,8 +2,8 @@
 /*
 	Plugin Name: Post Avatar
 	Plugin URI: http://www.garinungkadol.com/downloads/post-avatar/
-	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics.
-	Author: <a href="http://www.garinungkadol.com">Vicky Arulsingam</a> and <a href="http://wordpress.gaw2006.de">Dominik Menke</a>
+	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. Developed with <a href="http://wordpress.gaw2006.de">Dominik Menke</a>
+	Author: Vicky Arulsingam
 	Version: 1.2.2 
 	Author URI: http://garinungkadol.com
 */
