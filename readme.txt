@@ -2,8 +2,8 @@
 Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
-Requires at least: 2.0
-Tested up to: 2.1.2
+Requires at least: 2.0.11
+Tested up to: 2.3-beta3
 Stable tag: 1.2.2
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -18,18 +18,18 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 * Allows the following file types: .jpg, .jpeg, .gif and .png.
 
-* Settings display avatars automatically or through the use of template tags.
+* Settings to display avatars automatically or through the use of template tags.
 
 * Does not display missing images.
 
 
 = Changelog =
-
-* Fixed: Wordpress 2.1 incompatibility where posting comments deletes the avatar in the function: gkl_avatar_edit
-
+* Fixed bug which deleted post avatars when comments are posted
 
 
-= Installation =
+
+
+== Installation ==
 1. Download the plugin.
 
 2. Unzip.
@@ -64,4 +64,4 @@ Upload the images that you intend to use to the folder defined in the Post Avata
 
 3. Save your entry.
 
-Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
+Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for further details on customizing the avatar display.
