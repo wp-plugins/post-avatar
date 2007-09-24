@@ -24,6 +24,8 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 
 = Changelog =
+* Fixed bug which showed post avatars in feeds
+
 * Fixed bug which deleted post avatars when comments are posted
 
 
