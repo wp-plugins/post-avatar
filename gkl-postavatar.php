@@ -357,9 +357,10 @@ function gkl_postavatar_showcss() {
  * @return text $content
  */
 function gkl_postavatar_filter($content) {
-	global $post, $gkl_AvatarURL, $gkl_myAvatarDir;
+	global $post, $gkl_AvatarURL, $gkl_myAvatarDir, $wp_query;
 
-	gkl_postavatar();
+	if (!$wp_query->is_feed)
+		gkl_postavatar();
 	
 	return $content;
 }
