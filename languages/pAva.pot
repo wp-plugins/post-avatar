@@ -1,0 +1,87 @@
+# Localization file for the plugin Post Avatar originally created by Garinungkadol.
+# pAva.pot was created MANUALLY. So don't care about misseing strings - I forgot them. --Dominik Menke
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2006-09-05 15:34+0100\n"
+"PO-Revision-Date: 2007-05-31 13:28+0800\n"
+"Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
+"Language-Team: Dominik Menke <dominik.menke@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gkl-postavatar.php:96
+msgid "Post Avatar"
+msgstr ""
+
+#: ../gkl-postavatar.php:100
+msgid "Select an avatar for this post"
+msgstr ""
+
+#: ../gkl-postavatar.php:103
+msgid "Select"
+msgstr ""
+
+#: ../gkl-postavatar.php:110
+#: ../gkl-postavatar.php:147
+msgid "No Avatar selected"
+msgstr ""
+
+#: ../gkl-postavatar.php:134
+msgid "Preview"
+msgstr ""
+
+#: ../gkl-postavatar.php:144
+msgid "Avatar Does Not Exist"
+msgstr ""
+
+#: ../gkl-postavatar.php:314
+msgid "Post Avatar Options"
+msgstr ""
+
+#: ../gkl-postavatar.php:320
+msgid "Default options"
+msgstr ""
+
+#: ../gkl-postavatar.php:323
+msgid "Path to Images Folder:"
+msgstr ""
+
+#: ../gkl-postavatar.php:324
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr ""
+
+#: ../gkl-postavatar.php:330
+msgid "Show image in Write Post Page?"
+msgstr ""
+
+#: ../gkl-postavatar.php:334
+msgid "Scan the images directory and its sub-directories?"
+msgstr ""
+
+#: ../gkl-postavatar.php:338
+msgid "Show avatar in post? Disable to use template tag"
+msgstr ""
+
+#: ../gkl-postavatar.php:340
+msgid "Advanced options"
+msgstr ""
+
+#: ../gkl-postavatar.php:343
+msgid "Use this CSS class for the post avatar image"
+msgstr ""
+
+#: ../gkl-postavatar.php:344
+#: ../gkl-postavatar.php:351
+msgid "You can leave this field blank."
+msgstr ""
+
+#: ../gkl-postavatar.php:360
+msgid "Use this HTML before/after the post avatar image"
+msgstr ""
+
+#: ../gkl-postavatar.php:361
+msgid "Get image size?"
+msgstr ""
+
