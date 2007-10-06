@@ -6,3 +6,19 @@ function chPostAvatar(pAvaImg) {
 
 	return true;
 }
+
+function nextPostAvatar() {	
+	if (document.getElementById('postuserpic').selectedIndex < document.getElementById('postuserpic').length) {
+		document.getElementById('postuserpic').selectedIndex++;
+	}
+
+	document.getElementById('postavatar').src = gkl_avatar + document.getElementById('postuserpic').options[document.getElementById('postuserpic').selectedIndex].text;
+}
+
+function prevPostAvatar() {
+	if (document.getElementById('postuserpic').selectedIndex > 1) {
+		document.getElementById('postuserpic').selectedIndex--;
+	}
+
+	document.getElementById('postavatar').src = gkl_avatar + document.getElementById('postuserpic').options[document.getElementById('postuserpic').selectedIndex].text;	
+}

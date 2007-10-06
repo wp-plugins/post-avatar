@@ -6,14 +6,16 @@
 	border: 5px solid #000;
 }
 
-
+a.pa {
+	border: none;
+}
 
 /* CSS for admin pages. Please do not edit below here
 /* still a lot to do... */
-fieldset#postuserpic {
+fieldset#postavatarfield {
 
 }
 
-fieldset#postuserpic h3.dbx-handle {
+fieldset#postavatarfield h3.dbx-handle {
 
 }

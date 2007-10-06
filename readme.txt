@@ -1,9 +1,9 @@
 ==== Post Avatar ====
-Contributors: garinungkadol
+Contributors: garinungkadol, DKME
 Donate link: 
 Tags: post, avatars, images
-Requires at least: 2.0.11
-Tested up to: 2.3-beta3
+Requires at least: 2.0
+Tested up to: 2.3
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -18,17 +18,25 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 * Allows the following file types: .jpg, .jpeg, .gif and .png.
 
-* Settings to display avatars automatically or through the use of template tags.
+* Settings display avatars automatically or through the use of template tags.
+
+* Customize html output of avatars.
 
 * Does not display missing images.
 
 
 = Changelog =
-* Fixed bug which showed post avatars in feeds
+* Added: Role capabilities to allow only Administrators, Editors and Authors to post avatars
 
-* Fixed bug which deleted post avatars when comments are posted
+* Added: Additional parameters to set default avatar styles in options page
 
+* Added: Display avatar in post excerpts
 
+* Added: Option to enable/disable getimagesize
+
+* Fixed: Improved user input validation
+
+* Fixed: Removed post avatar display from feeds
 
 
 == Installation ==
@@ -51,6 +59,26 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 	* **Show avatar in post** - Place a tick mark to show avatar automatically on your blog post. Disable to use the template tag.
 
+	* **Advanced Options** - These options help you customize the look of your post avatar
+			1. **Before and After HTML** - enter the HTML you want to display before and after the post avatar. 
+				Example: Before: <div class="myimage"> / After: </div>
+				Output: <div class="myimage"><img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+
+			2. **CSS Class** - enter the name of the css class that you would like to associate with the post avatar image. Can be left blank. 
+				Example: The class name is: postimage
+				Output: <img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" />
+
+			If you use both the css class and the before and after html you will get the following output:
+				<div class="myimage"><img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+				
+			3. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
+
+
+= Upgrading =
+
+If you are upgrading from previous versions of Post Avatar, deactivate and activate the plugin to enable role capabilities.
+If you don't do this, even administrators will not be able to select avatars.
+
 
 = Usage =
 **A. UPLOAD IMAGES**
@@ -66,4 +94,4 @@ Upload the images that you intend to use to the folder defined in the Post Avata
 
 3. Save your entry.
 
-Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for further details on customizing the avatar display.
+Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
