@@ -38,6 +38,8 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 * Fixed: Removed post avatar display from feeds
 
+* Fixed: Bug that displayed avatar twice in excerpts
+
 
 == Installation ==
 1. Download the plugin.

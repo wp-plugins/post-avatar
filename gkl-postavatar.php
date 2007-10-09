@@ -512,7 +512,7 @@ add_action('init', 'gkl_setcap');
 // Display avatar without template tag
 if ($gkl_ShowInContent == 1){
 	add_filter('the_content', 'gkl_postavatar_filter');
-	add_filter('the_excerpt', 'gkl_postavatar_filter');	
+	//add_filter('the_excerpt', 'gkl_postavatar_filter');	
 	add_filter('wp_head', 'gkl_postavatar_showcss');
 }
 
