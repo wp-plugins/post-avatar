@@ -1,9 +1,10 @@
-function chPostAvatar(pAvaImg) {
-	if (pAvaImg.value == 'no_avatar.png')
+function chPostAvatar() {
+	var pAvaImg  = document.getElementById('postuserpic').value;
+	if (pAvaImg == 'no_avatar.png')
 		document.getElementById('postavatar').src = gkl_site + '/wp-content/plugins/post-avatar/images/no_avatar.png';
 	else
-		document.getElementById('postavatar').src = gkl_avatar + pAvaImg.value;
-
+		document.getElementById('postavatar').src = gkl_avatar + pAvaImg;
+	
 	return true;
 }
 

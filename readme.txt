@@ -1,15 +1,15 @@
 ==== Post Avatar ====
-Contributors: garinungkadol, DKME
+Contributors: garinungkadol, DMKE
 Donate link: 
 Tags: post, avatars, images
-Requires at least: 2.0
-Tested up to: 2.3
+Requires at least: 2.0.11
+Tested up to: 2.5
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
 
 == Description == 
-This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://wordpress.gaw2006.de).
+This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://WordPress.gaw2006.de).
 
 = Features =
 * Easy selection of images in the Write Post screen.
@@ -26,19 +26,13 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 
 = Changelog =
-* Added: Role capabilities to allow only Administrators, Editors and Authors to post avatars
+* Added: Slideshow effect to navigate for next and previous images 
 
-* Added: Additional parameters to set default avatar styles in options page
+* Fixed: Display of avatar in Write Post page and navigation effects work in IE6+
 
-* Added: Display avatar in post excerpts
+* Added: Style for WordPress 2.5
 
-* Added: Option to enable/disable getimagesize
-
-* Fixed: Improved user input validation
-
-* Fixed: Removed post avatar display from feeds
-
-* Fixed: Bug that displayed avatar twice in excerpts
+* Added: Option to include post avatars in rss feeds.
 
 
 == Installation ==
@@ -75,9 +69,12 @@ This plugin simplifies including a picture when writing posts by allowing the us
 				
 			3. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
 
+			4. **Show in feeds?** - Turned off by default. Check this option to display post avatars in your RSS feeds.
+
 
 = Upgrading =
 
+From versions lower than 1.2 down:
 If you are upgrading from previous versions of Post Avatar, deactivate and activate the plugin to enable role capabilities.
 If you don't do this, even administrators will not be able to select avatars.
 
