@@ -1,5 +1,5 @@
 ==== Post Avatar ====
-Contributors: garinungkadol, DKME
+Contributors: garinungkadol, DMKE
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0
