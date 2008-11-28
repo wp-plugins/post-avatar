@@ -3,7 +3,7 @@ Contributors: garinungkadol, DMKE
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0.11
-Tested up to: 2.6.3
+Tested up to: 2.7 beta 2
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -26,14 +26,11 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 
 = Changelog =
-* Added: Slideshow effect to navigate for next and previous images 
-
-* Fixed: Display of avatar in Write Post page and navigation effects work in IE6+
-
-* Added: Style for WordPress 2.5
-
-* Added: Option to include post avatars in rss feeds.
-
+* Fixed: "Cannot modify header information" errors when saving posts when plugin is used in conjunction with search unleashed plugin
+	
+* Added: Theme developer override option for automatic avatar display
+	
+* Added: template tag "gkl_get_postavatar", to return post avatar data in an array. 
 
 == Installation ==
 1. Download the plugin.
@@ -87,10 +84,33 @@ Upload the images that you intend to use to the folder defined in the Post Avata
 
 **B. ADDING AN AVATAR TO A POST**
 
-1. To add an image to a post, go to the Post Avatar section (just below the Save button).
+1. To add an image to a post, go to the Post Avatar section.
+   For versions older than WordPress 2.5, the post avatar selection box is below the Custom Fields.
+   For WordPress 2.5 and 2.6, the selection box is below the Categories.
+   In WordPress 2.7 the selection box is below the Excerpt but you can move it to a different location.
 
 2. Select the image name from the list. 
 
 3. Save your entry.
 
+
+= For Theme Developers =
+
+For improved integration with third-party WordPress themes, Post Avatar has two additional tags to help producing custom output in additional functions. 
+
+**OVERRIDE AUTOMATIC DISPLAY OF POST AVATARS
+
+In case users automatic display of avatars set to on, use the tag:
+        gkl_dev_override(true); 
+Place at the start of your theme's functions.php
+
+**CUSTOM OUTPUT
+
+To produce your own output with post avatar data, use the function:
+	gkl_get_postavatar();
+This lets you create a array containing the url to the avatar, image height and width, post title, post id and boolean value to let you know if the getimagesize option has been turned on or not.
+
+
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
+
+
