@@ -30,7 +30,7 @@ This plugin simplifies including a picture when writing posts by allowing the us
 	
 * Added: Theme developer override option for automatic avatar display
 	
-* Added: template tag "gkl_get_postavatar", to return post avatar data in an array. 
+* Added: template tag to return post avatar data in an array. 
 
 == Installation ==
 1. Download the plugin.
@@ -54,15 +54,15 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 	* **Advanced Options** - These options help you customize the look of your post avatar
 			1. **Before and After HTML** - enter the HTML you want to display before and after the post avatar. 
-				Example: Before: <div class="myimage"> / After: </div>
-				Output: <div class="myimage"><img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+				Example: Before: `<div class="myimage">` / After: `</div>`
+				Output: `<div class="myimage"><img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>`
 
 			2. **CSS Class** - enter the name of the css class that you would like to associate with the post avatar image. Can be left blank. 
 				Example: The class name is: postimage
-				Output: <img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" />
+				Output: `<img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" />`
 
 			If you use both the css class and the before and after html you will get the following output:
-				<div class="myimage"><img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+				`<div class="myimage"><img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>`
 				
 			3. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
 
@@ -101,16 +101,14 @@ For improved integration with third-party WordPress themes, Post Avatar has two 
 **OVERRIDE AUTOMATIC DISPLAY OF POST AVATARS
 
 In case users automatic display of avatars set to on, use the tag:
-        gkl_dev_override(true); 
+        `<?php gkl_dev_override(true); ?>`
 Place at the start of your theme's functions.php
 
 **CUSTOM OUTPUT
 
 To produce your own output with post avatar data, use the function:
-	gkl_get_postavatar();
+	`<?php gkl_get_postavatar(); ?>`
 This lets you create a array containing the url to the avatar, image height and width, post title, post id and boolean value to let you know if the getimagesize option has been turned on or not.
 
 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
-
-
