@@ -26,6 +26,8 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 
 = Changelog =
+* Fixed: Incorrect display of css class
+
 * Fixed: "Cannot modify header information" errors when saving posts when plugin is used in conjunction with search unleashed plugin
 	
 * Added: Theme developer override option for automatic avatar display
@@ -103,12 +105,14 @@ For improved integration with third-party WordPress themes, Post Avatar has two 
 
 In case users automatic display of avatars set to on, use the tag:
         &lt;?php gkl&#95;dev&#95;override(true); ?&gt;
+
 Place at the start of your theme's functions.php
 
 **CUSTOM OUTPUT
 
 To produce your own output with post avatar data, use the function:
 	&lt;?php gkl&#95;get&#95;postavatar(); ?&gt;
+
 This lets you create a array containing the url to the avatar, image height and width, post title, post id and boolean value to let you know if the getimagesize option has been turned on or not.
 
 
