@@ -59,7 +59,7 @@ function gkl_postavatar($class='', $before='', $after='') {
 			$avatar_dim = 'width="' . $post_avatar['image_width'] .'" height="'. $post_avatar['image_height'] .'"';
 		}
 		// Show post avatar		
-		echo $before .'<img'. $class .' src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" border="0" />'. $after ."\n";
+		echo $before .'<img class="'. $class .'" src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" border="0" />'. $after ."\n";
 	}
 }
 
