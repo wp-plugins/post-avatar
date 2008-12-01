@@ -56,22 +56,25 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 	* **Show avatar in post** - Place a tick mark to show avatar automatically on your blog post. Disable to use the template tag.
 
-	* **Advanced Options** - These options help you customize the look of your post avatar
+	These options help you further customize the display of your post avatar
 
-	1. **Before and After HTML** - enter the HTML you want to display before and after the post avatar. 
-	Example: Before: &lt;div class="myimage"&gt; / After: &lt;/div&gt;
-	Output: &lt;div class="myimage"&gt;&lt;img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /&gt;&lt;/div&gt;
+	* **Customize HTML/CSS** - These options help you customize the look of your post avatar
+			1. **Before and After HTML** - enter the HTML you want to display before and after the post avatar. 
+				Example: Before: <div class="myimage"> / After: </div>
+				Output: <div class="myimage"><img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
 
-	2. **CSS Class** - enter the name of the css class that you would like to associate with the post avatar image. Can be left blank. 
-	Example: The class name is: postimage
-	Output: &lt;img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /&gt;
+			2. **CSS Class** - enter the name of the css class that you would like to associate with the post avatar image. Can be left blank. 
+				Example: The class name is: postimage
+				Output: <img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" />
 
-	If you use both the css class and the before and after html you will get the following output:
-	&lt;div class="myimage"&gt;&lt;img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /&gt;&lt;/div&gt;
-				
-	3. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
 
-	4. **Show in feeds?** - Turned off by default. Check this option to display post avatars in your RSS feeds.
+			If you use both the css class and the before and after html you will get the following output:
+				<div class="myimage"><img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+
+	* **Others**
+			1. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
+
+			2. **Show in feeds?** - Turned off by default. Check this option to display post avatars in your RSS feeds.
 
 
 = Upgrading =
