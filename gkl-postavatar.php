@@ -4,7 +4,7 @@
 	Plugin URI: http://www.garinungkadol.com/downloads/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. Developed with <a href="http://wordpress.gaw2006.de">Dominik Menke</a>.
 	Author: Vicky Arulsingam
-	Version: 1.2.5
+	Version: 1.2.5.1
 	Author URI: http://garinungkadol.com
 */
 
@@ -48,6 +48,7 @@ $gkl_dev_override = false;
 function gkl_postavatar($class='', $before='', $after='') {
 
 	if (empty($class)) $class  = get_option('gklpa_class');
+	if (!empty($class)) $class = ' class="' . $class . '"';
 	if (empty($before)) $before = gkl_unescape_html(stripslashes(get_option('gklpa_before'))); 
 	if (empty($after)) $after = gkl_unescape_html(stripslashes(get_option('gklpa_after')));
 
@@ -59,7 +60,7 @@ function gkl_postavatar($class='', $before='', $after='') {
 			$avatar_dim = 'width="' . $post_avatar['image_width'] .'" height="'. $post_avatar['image_height'] .'"';
 		}
 		// Show post avatar		
-		echo $before .'<img class="'. $class .'" src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" border="0" />'. $after ."\n";
+		echo $before .'<img' .$class . ' src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" border="0" />'. $after ."\n";
 	}
 }
 
@@ -93,7 +94,7 @@ function gkl_get_postavatar() {
 			$CurrAvatarLoc = $gkl_AvatarURL . ltrim($CurrAvatar[0],'/');
 
 			// create array of post avatar values			
-			$post_avatar = array("avatar_url"=>$CurrAvatarLoc, "show_image_dim"=>$gkl_getsize, "image_height"=>$dim[0], "image_width"=>$dim[1], "post_id"=>$post_id, "post_title"=>$post_title);
+			$post_avatar = array("avatar_url"=>$CurrAvatarLoc, "show_image_dim"=>$gkl_getsize, "image_height"=>$dim[1], "image_width"=>$dim[0], "post_id"=>$post_id, "post_title"=>$post_title);
 
 		}
 	} else {
