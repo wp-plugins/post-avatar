@@ -59,22 +59,23 @@ This plugin simplifies including a picture when writing posts by allowing the us
 	These options help you further customize the display of your post avatar
 
 	* **Customize HTML/CSS** - These options help you customize the look of your post avatar
-			1. **Before and After HTML** - enter the HTML you want to display before and after the post avatar. 
-				Example: Before: <div class="myimage"> / After: </div>
-				Output: <div class="myimage"><img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+			
+	1. **Before and After HTML** - enter the HTML you want to display before and after the post avatar. 
+		Example: Before: <div class="myimage"> / After: </div>
+		Output: <div class="myimage"><img src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
 
-			2. **CSS Class** - enter the name of the css class that you would like to associate with the post avatar image. Can be left blank. 
-				Example: The class name is: postimage
-				Output: <img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" />
+	2. **CSS Class** - enter the name of the css class that you would like to associate with the post avatar image. Can be left blank. 
+		Example: The class name is: postimage
+		Output: <img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" />
 
-
-			If you use both the css class and the before and after html you will get the following output:
-				<div class="myimage"><img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
+	If you use both the css class and the before and after html you will get the following output:
+		<div class="myimage"><img class="postimage" src="http://mydomain.com/images/image.jpg" style="border:0" alt="post-title" /></div>
 
 	* **Others**
-			1. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
+	
+	1. **Get image size?** - Turned on by default to determine the image's width and height. If you encounter any getimagesize errors, turn this feature off.
 
-			2. **Show in feeds?** - Turned off by default. Check this option to display post avatars in your RSS feeds.
+	2. **Show in feeds?** - Turned off by default. Check this option to display post avatars in your RSS feeds.
 
 
 = Upgrading =
