@@ -3,7 +3,7 @@ Contributors: garinungkadol, DMKE
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0.11
-Tested up to: 2.7 beta 2
+Tested up to: 2.7 beta 3
 Stable tag: 1.2.5
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -27,6 +27,8 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 = Changelog =
 * Fixed: Incorrect display of css class
+
+* Fixed: Bugs in image display (height/width switched up)
 
 * Fixed: "Cannot modify header information" errors when saving posts when plugin is used in conjunction with search unleashed plugin
 	
