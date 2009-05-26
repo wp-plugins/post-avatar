@@ -115,8 +115,8 @@ msgstr ""
 msgid "Check here to display post avatars in your rss feeds"
 msgstr ""
 
-#: gkl-postavatar.php:371
-#: gkl-postavatar.php:420
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
 msgid "Update Options"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "CSS"
 msgstr ""
 
-#: gkl-postavatar.php:450
+#: gkl-postavatar.php:480
 msgid "Others"
 msgstr ""
 

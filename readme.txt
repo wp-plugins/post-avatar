@@ -3,13 +3,17 @@ Contributors: garinungkadol, DMKE
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0.11
-Tested up to: 2.7 beta 3
+Tested up to: 2.8 beta 2
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
 
 == Description == 
 This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://WordPress.gaw2006.de).
+
+Translations:
+German [Dominik Menke](http://WordPress.gaw2006.de)
+Italian [Gianni Diurno] (http://gidibao.net)
 
 = Features =
 * Easy selection of images in the Write Post screen.

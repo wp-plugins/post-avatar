@@ -4,7 +4,7 @@
 	Plugin URI: http://www.garinungkadol.com/downloads/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. Developed with <a href="http://wordpress.gaw2006.de">Dominik Menke</a>.
 	Author: Vicky Arulsingam
-	Version: 1.2.5.1
+	Version: 1.2.5.2
 	Author URI: http://garinungkadol.com
 */
 
@@ -31,7 +31,6 @@ $gkl_ScanRecursive = get_option('gklpa_scanrecursive'); // Recursive scan of the
 $gkl_ShowInContent = get_option('gklpa_showincontent'); // Show avatar automatically in content?
 $gkl_getsize = get_option('gklpa_getsize'); // Use getimagesize?
 $gkl_dev_override = false;
-
 
 
 

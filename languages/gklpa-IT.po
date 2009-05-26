@@ -1,0 +1,147 @@
+# pAva.pot was created MANUALLY. So don't care about misseing strings - I forgot them. --Dominik Menke
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar in italiano\n"
+"POT-Creation-Date: 2008-03-31 18:00+0100\n"
+"PO-Revision-Date: 2009-05-26 14:27+0800\n"
+"Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
+"Language-Team: Gianni Diurno | http://gidibao.net/ <gidibao@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: gkl-postavatar.php:178
+#: gkl-postavatar.php:678
+msgid "Post Avatar"
+msgstr "Post Avatar"
+
+#: gkl-postavatar.php:227
+msgid "Select an avatar"
+msgstr "Seleziona un avatar"
+
+#: gkl-postavatar.php:234
+#: gkl-postavatar.php:270
+msgid "No avatar selected"
+msgstr "Nessun avatar é stato selezionato"
+
+#: gkl-postavatar.php:257
+msgid "Preview"
+msgstr "Anteprima"
+
+#: gkl-postavatar.php:267
+msgid "Avatar does not exist"
+msgstr "Avatar non esistente"
+
+#: gkl-postavatar.php:322
+msgid "Post Avatar Options"
+msgstr "Opzioni Post Avatar"
+
+#: gkl-postavatar.php:394
+msgid "Post Avatar Settings"
+msgstr "Impostazioni Post Avatar"
+
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
+msgid "Update options"
+msgstr "Aggiorna le opzioni"
+
+#: gkl-postavatar.php:402
+#: gkl-postavatar.php:461
+msgid "Default options"
+msgstr "Opzioni predefinite"
+
+#: gkl-postavatar.php:405
+#: gkl-postavatar.php:464
+msgid "Path to Images Folder:"
+msgstr "Percorso alla cartella immagini:"
+
+#: gkl-postavatar.php:406
+#: gkl-postavatar.php:466
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr "Questo spazio non deve essere lasciato in bianco. La cartella deve essere presente."
+
+#: gkl-postavatar.php:412
+#: gkl-postavatar.php:471
+msgid "Show image in Write Post Page?"
+msgstr "Desideri mostrare l'immagine nella pagina di scrittura articoli?"
+
+#: gkl-postavatar.php:416
+#: gkl-postavatar.php:481
+msgid "Scan the images directory and its sub-directories?"
+msgstr "Desideri analizzare la cartella delle immagini sotto-cartelle comprese?"
+
+#: gkl-postavatar.php:420
+#: gkl-postavatar.php:473
+msgid "Show avatar in post? Disable to use template tag"
+msgstr "Desideri mostrare l'avatar negli articoli? Disattiva per utilizzare il tag del template"
+
+#: gkl-postavatar.php:424
+#: gkl-postavatar.php:491
+msgid "Customize HTML/CSS"
+msgstr "Personalizza HTML/CSS"
+
+#: gkl-postavatar.php:427
+#: gkl-postavatar.php:496
+msgid "Use this HTML before/after the post avatar image"
+msgstr "Usa questo HTML davanti/a seguire l'immagine avatar per il post"
+
+#: gkl-postavatar.php:428
+#: gkl-postavatar.php:437
+#: gkl-postavatar.php:498
+#: gkl-postavatar.php:506
+msgid "You can leave this field blank."
+msgstr "Puoi lasciare in bianco questo campo."
+
+#: gkl-postavatar.php:436
+#: gkl-postavatar.php:504
+msgid "Use this CSS class for the post avatar image"
+msgstr "Utilizza questa classe CSS per l'immagine avatar del post"
+
+#: gkl-postavatar.php:444
+msgid "Get image size?"
+msgstr "Dimensione immagine?"
+
+#: gkl-postavatar.php:445
+msgid "Disable this feature if you encounter getimagesize errors"
+msgstr "Disattiva questa funzione qualora riscontrassi degli errori nel ridimensionamento delle immagini"
+
+#: gkl-postavatar.php:449
+msgid "Show post avatars in feeds?"
+msgstr "Desideri mostrare gli avatar nei feed?"
+
+#: gkl-postavatar.php:450
+#: gkl-postavatar.php:485
+msgid "Check here to display post avatars in your rss feeds"
+msgstr "Metti il segno di spunta per potere mostrare gli avatar nei tuoi feed rss"
+
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
+msgid "Update Options"
+msgstr "Aggiorna le opzioni"
+
+#: gkl-postavatar.php:470
+msgid "Display"
+msgstr "Mostra"
+
+#: gkl-postavatar.php:495
+msgid "HTML"
+msgstr "HTML"
+
+#: gkl-postavatar.php:503
+msgid "CSS"
+msgstr "CSS"
+
+#: gkl-postavatar.php:480
+msgid "Others"
+msgstr "Altro"
+
+#: gkl-postavatar.php:483
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr "Dimensione immagini. Disattiva questa funzione qualora riscontrassi degli errori nel ridimensionamento delle immagini"
+
+#: gkl-postavatar.php:511
+msgid "Save Changes"
+msgstr "Salva le modifiche"
+
