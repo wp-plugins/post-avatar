@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0.11
-Tested up to: 2.8 beta 2
+Tested up to: 2.8
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -13,9 +13,8 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 Translations:
 
-German [Dominik Menke](http://WordPress.gaw2006.de)
-
-Italian [Gianni Diurno](http://gidibao.net)
+* German [Dominik Menke](http://WordPress.gaw2006.de)
+* Italian [Gianni Diurno](http://gidibao.net)
 
 
 = Features =
@@ -30,18 +29,6 @@ Italian [Gianni Diurno](http://gidibao.net)
 * Customize html output of avatars.
 
 * Does not display missing images.
-
-
-= Changelog =
-* Fixed: Incorrect display of css class
-
-* Fixed: Bugs in image display (height/width switched up)
-
-* Fixed: "Cannot modify header information" errors when saving posts when plugin is used in conjunction with search unleashed plugin
-	
-* Added: Theme developer override option for automatic avatar display
-	
-* Added: template tag "gkl_get_postavatar", to return post avatar data in an array. 
 
 == Installation ==
 1. Download the plugin.
@@ -130,3 +117,61 @@ This lets you create a array containing the url to the avatar, image height and 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-avatar/) for details on customizing the avatar display.
 
 
+== Changelog ==
+
+= 1.2.5.2 =
+(06/02/2009)
+* Added: Italian translation . Thanks to [Gianni Diurno](http://gidibao.net).
+
+
+= 1.2.5 =
+(12/15/2008)
+* Fixed: Incorrect display of css class
+* Fixed: Bugs in image display (height/width switched up)
+* Fixed: "Cannot modify header information" errors when saving posts when plugin is used in conjunction with search unleashed plugin
+* Added: Theme developer override option for automatic avatar display
+* Added: template tag "gkl_get_postavatar", to return post avatar data in an array. 
+
+= 1.2.4 =
+(03/31/2008)
+* Added: Slideshow effect to navigate for next and previous images
+* Fixed: Display of avatar in Write Post page and navigation effects work in IE6+
+* Added: HTML for meta boxes in WordPress 2.5+
+* Added: Option to include avatars in RSS feeds
+
+= 1.2.3 = 
+(10/06/2007)
+* Added: Role capabilities that allow admins, editors and authors to post avatars
+* Added: HTML and CSS classes inside the options page
+* Added: Include automatic avatar display in post excerpts
+* Added: Option to display image dimensions
+* Fixed: Stop avatars from displaying in feeds
+
+= 1.2.2 =
+(02/12/2007)
+* Fixed: Additional checks in updating posts to make sure that comment posting don't delete post avatars
+
+= 1.2.1 = 
+(01/11/2007)
+* Added: Compatibility for Wordpress 2.1
+* Added: Option to display image automatically without have to use template tag
+
+= 1.2 = 
+(12/09/2006)
+* Added: Scan subdirectories for images
+* Added: Created external scriptfile to make extending script easier
+* Added: Check if PHP_SELF contains substring (for subdomain installations)
+* Fixed: Improved image display in Write Post screen
+* Added: Check image existence using absolute path instead of url (for those without “Allow_url_fopen”)
+
+= 1.1 =
+(09/06/2006)
+* Added: Live preview of avatar in Write Post screen (tested in Mozilla)
+* Fixed: gkl\_postavatar template tag produces correct (X)HTML
+* Speed optimization
+* Improved parameters ($before, $after, $class)
+* Added: Translation support
+
+= 1.0 = 
+(08/26/2006)
+* Initial release
