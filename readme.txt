@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0.11
-Tested up to: 2.8
+Tested up to: 2.8.3
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -15,6 +15,7 @@ Translations:
 
 * German [Dominik Menke](http://WordPress.gaw2006.de)
 * Italian [Gianni Diurno](http://gidibao.net)
+* Belorussian [Fat Cower](http://www.fatcow.com)
 
 
 = Features =
@@ -119,9 +120,14 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 == Changelog ==
 
+= 1.2.5.3 =
+(08/06/2009)
+* Added: Belorussian translation. Thanks to [Fat Cower](http://www.fatcow.com).
+
+
 = 1.2.5.2 =
 (06/02/2009)
-* Added: Italian translation . Thanks to [Gianni Diurno](http://gidibao.net).
+* Added: Italian translation. Thanks to [Gianni Diurno](http://gidibao.net).
 
 
 = 1.2.5 =

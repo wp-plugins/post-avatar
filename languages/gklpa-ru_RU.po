@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-07-16 20:15+0300\n"
+"Last-Translator: Fat Cow <zhr@tut.by>\n"
+"Language-Team: Fat Cow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: gkl-postavatar.php:150
+#: gkl-postavatar.php:165
+msgid "Post Avatar"
+msgstr "Post-Avatar"
+
+#: gkl-postavatar.php:187
+msgid "Select an avatar"
+msgstr "Выбрать Аватар"
+
+#: gkl-postavatar.php:194
+#: gkl-postavatar.php:230
+msgid "no avatar selected"
+msgstr "не выбраны аватары"
+
+#: gkl-postavatar.php:217
+msgid "Preview"
+msgstr "Предосмотр"
+
+#: gkl-postavatar.php:227
+msgid "Avatar does not exist"
+msgstr "Аватар не существует"
+
+#: gkl-postavatar.php:364
+msgid "Post Avatar Settings"
+msgstr "Post-Avatar-Настройки"
+
+#: gkl-postavatar.php:372
+#: gkl-postavatar.php:431
+msgid "Default options"
+msgstr "Стандартные настройки"
+
+#: gkl-postavatar.php:375
+#: gkl-postavatar.php:434
+msgid "Path to Images Folder:"
+msgstr "Путь к папке фото:"
+
+#: gkl-postavatar.php:376
+#: gkl-postavatar.php:436
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr "Вы не должны оставить это поле пустым. Каталог также должен существовать."
+
+#: gkl-postavatar.php:382
+#: gkl-postavatar.php:441
+msgid "Show image in Write Post Page?"
+msgstr "Показывать изображение на Странице Написания Постов?"
+
+#: gkl-postavatar.php:386
+#: gkl-postavatar.php:451
+msgid "Scan the images directory and its sub-directories?"
+msgstr "Сканирование директорий с изображениями и суб-каталогов?"
+
+#: gkl-postavatar.php:390
+#: gkl-postavatar.php:443
+msgid "Show avatar in post? Disable to use template tag"
+msgstr "Показать аватары в посте? Запретить использовать тега"
+
+#: gkl-postavatar.php:394
+#: gkl-postavatar.php:461
+msgid "Customize HTML/CSS"
+msgstr "Настроить HTML/CSS"
+
+#: gkl-postavatar.php:397
+#: gkl-postavatar.php:466
+msgid "Use this HTML before/after the post avatar image"
+msgstr "Используйте этот HTML до / после поста аватара"
+
+#: gkl-postavatar.php:398
+#: gkl-postavatar.php:407
+#: gkl-postavatar.php:468
+#: gkl-postavatar.php:476
+msgid "You can leave this field blank."
+msgstr "Вы можете оставить это поле пустым."
+
+#: gkl-postavatar.php:406
+#: gkl-postavatar.php:474
+msgid "Use this CSS class for the post avatar image"
+msgstr "Используйте этот CSS класс для аватара поста"
+
+#: gkl-postavatar.php:414
+msgid "Get image size?"
+msgstr "Получать размер изображения?"
+
+#: gkl-postavatar.php:415
+msgid "Disable this feature if you encounter getimagesize errors"
+msgstr "Отключите эту функцию, если вы обнаружили ошибку getimagesize"
+
+#: gkl-postavatar.php:419
+msgid "Show post avatars in feeds?"
+msgstr "Показывать аватары постов в лентах?"
+
+#: gkl-postavatar.php:420
+#: gkl-postavatar.php:455
+msgid "Check here to display post avatars in your rss feeds"
+msgstr "Смотрите здесь для отображения аватара поста в вашей RSS-каналы"
+
+#: gkl-postavatar.php:371
+#: gkl-postavatar.php:420
+msgid "Update Options"
+msgstr "Обновить настройки"
+
+#: gkl-postavatar.php:440
+msgid "Display"
+msgstr "Отображать"
+
+#: gkl-postavatar.php:465
+msgid "HTML"
+msgstr "HTML"
+
+#: gkl-postavatar.php:473
+msgid "CSS"
+msgstr "CSS"
+
+#: gkl-postavatar.php:450
+msgid "Others"
+msgstr "Остальное"
+
+#: gkl-postavatar.php:453
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr "Получить изображения. Отключите эту функцию, если вы обнаружили ошибку в getimagesize"
+
+#: gkl-postavatar.php:481
+msgid "Save Changes"
+msgstr "Сохранить настройки"
+
