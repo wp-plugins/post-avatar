@@ -120,6 +120,9 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 
 == Changelog ==
+= 1.2.5.4 =
+(08/21/2009)
+* Added: Dutch translation. Thanks to [Jay August](http://www.jayaugust.com).
 
 = 1.2.5.3 =
 (08/06/2009)
