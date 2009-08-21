@@ -16,6 +16,7 @@ Translations:
 * German [Dominik Menke](http://WordPress.gaw2006.de)
 * Italian [Gianni Diurno](http://gidibao.net)
 * Belorussian [Fat Cower](http://www.fatcow.com)
+* Dutch [Jay August](http://www.jayaugust.com)
 
 
 = Features =
