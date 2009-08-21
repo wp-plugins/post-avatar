@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar 1.2.4\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-03-31 16:41+0800\n"
+"Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
+"Language-Team: Dominik Menke <dominik.menke@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: gkl-postavatar.php:150
+#: gkl-postavatar.php:165
+msgid "Post Avatar"
+msgstr "Post-Avatar"
+
+#: gkl-postavatar.php:187
+msgid "Select an avatar"
+msgstr "W&auml;hle einen Avatar f&uuml;r diesen Beitrag"
+
+#: gkl-postavatar.php:194
+#: gkl-postavatar.php:230
+msgid "no avatar selected"
+msgstr "Es wurde kein Avatar ausgew&auml;hlt."
+
+#: gkl-postavatar.php:217
+msgid "Preview"
+msgstr "Vorschau"
+
+#: gkl-postavatar.php:227
+msgid "Avatar does not exist"
+msgstr "existiert nicht."
+
+#: gkl-postavatar.php:364
+msgid "Post Avatar Settings"
+msgstr "Post-Avatar-Optionen"
+
+#: gkl-postavatar.php:372
+#: gkl-postavatar.php:431
+msgid "Default options"
+msgstr ""
+
+#: gkl-postavatar.php:375
+#: gkl-postavatar.php:434
+msgid "Path to Images Folder:"
+msgstr "Pfad zu den Avatar-Bildchen"
+
+#: gkl-postavatar.php:376
+#: gkl-postavatar.php:436
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr ""
+
+#: gkl-postavatar.php:382
+#: gkl-postavatar.php:441
+msgid "Show image in Write Post Page?"
+msgstr "Vorschau-Bild auf der Seite <em>Schreiben &raquo; Beitrag schreiben</em> zeigen?"
+
+#: gkl-postavatar.php:386
+#: gkl-postavatar.php:451
+msgid "Scan the images directory and its sub-directories?"
+msgstr ""
+
+#: gkl-postavatar.php:390
+#: gkl-postavatar.php:443
+msgid "Show avatar in post? Disable to use template tag"
+msgstr ""
+
+#: gkl-postavatar.php:394
+#: gkl-postavatar.php:461
+msgid "Customize HTML/CSS"
+msgstr ""
+
+#: gkl-postavatar.php:397
+#: gkl-postavatar.php:466
+msgid "Use this HTML before/after the post avatar image"
+msgstr ""
+
+#: gkl-postavatar.php:398
+#: gkl-postavatar.php:407
+#: gkl-postavatar.php:468
+#: gkl-postavatar.php:476
+msgid "You can leave this field blank."
+msgstr ""
+
+#: gkl-postavatar.php:406
+#: gkl-postavatar.php:474
+msgid "Use this CSS class for the post avatar image"
+msgstr ""
+
+#: gkl-postavatar.php:414
+msgid "Get image size?"
+msgstr ""
+
+#: gkl-postavatar.php:415
+msgid "Disable this feature if you encounter getimagesize errors"
+msgstr ""
+
+#: gkl-postavatar.php:419
+msgid "Show post avatars in feeds?"
+msgstr ""
+
+#: gkl-postavatar.php:420
+#: gkl-postavatar.php:455
+msgid "Check here to display post avatars in your rss feeds"
+msgstr ""
+
+#: gkl-postavatar.php:371
+#: gkl-postavatar.php:420
+msgid "Update Options"
+msgstr ""
+
+#: gkl-postavatar.php:440
+msgid "Display"
+msgstr ""
+
+#: gkl-postavatar.php:465
+msgid "HTML"
+msgstr ""
+
+#: gkl-postavatar.php:473
+msgid "CSS"
+msgstr ""
+
+#: gkl-postavatar.php:450
+msgid "Others"
+msgstr ""
+
+#: gkl-postavatar.php:453
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr ""
+
+#: gkl-postavatar.php:481
+msgid "Save Changes"
+msgstr ""
+
