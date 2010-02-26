@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.0.11
-Tested up to: 2.8.3
+Tested up to: 2.9.2
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -120,6 +120,16 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 
 == Changelog ==
+= 1.2.7 =
+(02/12/2010)
+* Fixed: IE preview problems when reselecting an image. Thanks [spedney](http://wordpress.org/support/topic/305900)
+* Fixed: removed border="0" in image display for XHTML compliance. Thanks [Jay August](http://wordpress.org/support/topic/352564)
+
+= 1.2.5.5 =
+(08/21/2009)
+* Added: Dutch translation. Thanks to [Jay August](http://www.jayaugust.com).
+
+
 = 1.2.5.4 =
 (08/21/2009)
 * Added: Dutch translation. Thanks to [Jay August](http://www.jayaugust.com).
@@ -185,3 +195,7 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 = 1.0 = 
 (08/26/2006)
 * Initial release
+
+== Upgrade Notice ==
+= 1.2.7=
+Minor fixes to improve avatar selection for IE and Safari. HTML code is XHTML compliant

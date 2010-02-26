@@ -4,7 +4,7 @@
 	Plugin URI: http://www.garinungkadol.com/downloads/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. Developed with <a href="http://wordpress.gaw2006.de">Dominik Menke</a>.
 	Author: Vicky Arulsingam
-	Version: 1.2.6
+	Version: 1.2.7
 	Author URI: http://garinungkadol.com
 */
 
@@ -36,7 +36,6 @@ $gkl_dev_override = false;
 
 
 
-
 /**
  * Display post avatar within The Loop
  *
@@ -45,13 +44,13 @@ $gkl_dev_override = false;
  * @param string $after
  */
 function gkl_postavatar($class='', $before='', $after='') {
-
+	global $post;
 	if (empty($class)) $class  = get_option('gklpa_class');
 	if (!empty($class)) $class = ' class="' . $class . '"';
 	if (empty($before)) $before = gkl_unescape_html(stripslashes(get_option('gklpa_before'))); 
 	if (empty($after)) $after = gkl_unescape_html(stripslashes(get_option('gklpa_after')));
 
-	$post_avatar = gkl_get_postavatar();
+	$post_avatar = gkl_get_postavatar($post);
 	$avatar_dim = '';
 
 	if (!is_null($post_avatar)) {
@@ -59,7 +58,7 @@ function gkl_postavatar($class='', $before='', $after='') {
 			$avatar_dim = 'width="' . $post_avatar['image_width'] .'" height="'. $post_avatar['image_height'] .'"';
 		}
 		// Show post avatar		
-		echo $before .'<img' .$class . ' src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" border="0" />'. $after ."\n";
+		echo $before .'<img' .$class . ' src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" />'. $after ."\n";
 	}
 	
 }
@@ -69,8 +68,8 @@ function gkl_postavatar($class='', $before='', $after='') {
  * Get post avatar data
  *
  */
-function gkl_get_postavatar() {
-	global $post, $gkl_AvatarURL, $gkl_myAvatarDir, $gkl_getsize;
+function gkl_get_postavatar($post) {
+	global $gkl_AvatarURL, $gkl_myAvatarDir, $gkl_getsize;
 
 	$post_avatar = array();
 	$post_id = $post->ID;
@@ -231,7 +230,7 @@ function gkl_avatar_html($AvatarList, $CurrAvatar, $selected) {
 							<a href="#prev" onclick="prevPostAvatar();return false" class="pa"><img src="<?php echo $gklpa_siteurl .'/wp-content/plugins/post-avatar/images/prev.png'; ?>" alt="prev" title="" /></a>
 	<?php } ?>
 		
-								<select name="postuserpic" id="postuserpic">
+								<select name="postuserpic" id="postuserpic" onchange="chPostAvatar(this)">
 									<option value="no_avatar.png" onclick="chPostAvatar(this)"><?php _e('No Avatar selected', 'gklpa'); ?></option>
 	<?php
 		foreach ($AvatarList as $file) {
@@ -263,12 +262,12 @@ function gkl_avatar_html($AvatarList, $CurrAvatar, $selected) {
 				if ( !empty($CurrAvatar) ) {
 					if ( file_exists($gkl_myAvatarDir . $CurrAvatar[0]) ) {
 						$CurrAvatarLoc = $gkl_AvatarURL . $CurrAvatar[0];
-						echo '<img id="postavatar" src="'. $CurrAvatarLoc .'" alt="Avatar" border="0" />';
+						echo '<img id="postavatar" src="'. $CurrAvatarLoc .'" alt="Avatar" />';
 					} else {
-						echo '<img id="postavatar" src="'. get_settings('siteurl') .'/wp-content/plugins/post-avatar/images/missing_avatar.png" alt="'. __('Avatar Does Not Exist', 'gklpa') .'" border="0" />';
+						echo '<img id="postavatar" src="'. get_settings('siteurl') .'/wp-content/plugins/post-avatar/images/missing_avatar.png" alt="'. __('Avatar Does Not Exist', 'gklpa') .'" />';
 					}
 				} else {
-					echo '<img id="postavatar" src="'. get_settings('siteurl') .'/wp-content/plugins/post-avatar/images/no_avatar.png" alt="'. __('No Avatar selected', 'gklpa') .'" border="0" />';
+					echo '<img id="postavatar" src="'. get_settings('siteurl') .'/wp-content/plugins/post-avatar/images/no_avatar.png" alt="'. __('No Avatar selected', 'gklpa') .'" />';
 				}
 	
 			?></td>
