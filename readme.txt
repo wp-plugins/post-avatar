@@ -4,7 +4,7 @@ Donate link:
 Tags: post, avatars, images
 Requires at least: 2.0.11
 Tested up to: 2.9.2
-Stable tag: trunk
+Stable tag: 1.2.7.1
 
 Choose an avatar from a pre-defined list to include in a post. 
 
@@ -13,10 +13,12 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 Translations:
 
-* German [Dominik Menke](http://WordPress.gaw2006.de)
-* Italian [Gianni Diurno](http://gidibao.net)
-* Belorussian [Fat Cower](http://www.fatcow.com)
-* Dutch [Jay August](http://www.jayaugust.com)
+* German (de_DE) [Dominik Menke](http://WordPress.gaw2006.de)
+* Italian (it_IT) [Gianni Diurno](http://gidibao.net)
+* Belorussian (ru_RU) [Fat Cower](http://www.fatcow.com)
+* Dutch (nl_NL) [Jay August](http://www.jayaugust.com)
+* Spanish (es_ES) [gogollack](http://queestapasando.co.cc/)
+* Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
 
 
 = Features =
@@ -120,6 +122,12 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 
 == Changelog ==
+= 1.2.7.1 =
+(03/11/2010)
+* Added: Spanish translation. Thanks to [gogollack](http://queestapasando.co.cc/).
+* Added: Czech translation. Thanks to [Lelkoun](http://lelkoun.cz).
+
+
 = 1.2.7 =
 (02/12/2010)
 * Fixed: IE preview problems when reselecting an image. Thanks [spedney](http://wordpress.org/support/topic/305900)
@@ -197,5 +205,5 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 * Initial release
 
 == Upgrade Notice ==
-= 1.2.7=
-Minor fixes to improve avatar selection for IE and Safari. HTML code is XHTML compliant
+= 1.2.7.1=
+Added translations for Spanish and Czech.
