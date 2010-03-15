@@ -1,0 +1,147 @@
+# pAva.pot was created MANUALLY. So don't care about misseing strings - I forgot them. --Dominik Menke
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar en español\n"
+"POT-Creation-Date: 2010-03-09 20:50+0100\n"
+"PO-Revision-Date: 2010-03-09 21:22+0100\n"
+"Last-Translator: \n"
+"Language-Team: gogollack | http://queestapasando.co.cc/ <loft17@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+
+#: gkl-postavatar.php:178
+#: gkl-postavatar.php:678
+msgid "Post Avatar"
+msgstr "Post Avatar"
+
+#: gkl-postavatar.php:227
+msgid "Select an avatar"
+msgstr "Seleccionar un avatar"
+
+#: gkl-postavatar.php:234
+#: gkl-postavatar.php:270
+msgid "No avatar selected"
+msgstr "No se ha seleccionado ningún avatar"
+
+#: gkl-postavatar.php:257
+msgid "Preview"
+msgstr "Vista previa"
+
+#: gkl-postavatar.php:267
+msgid "Avatar does not exist"
+msgstr "El avatar no exite"
+
+#: gkl-postavatar.php:322
+msgid "Post Avatar Options"
+msgstr "Opciones de Post-Avatar"
+
+#: gkl-postavatar.php:394
+msgid "Post Avatar Settings"
+msgstr "Configuracion de Post-Avatar"
+
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
+msgid "Update options"
+msgstr "Actualizar opciones"
+
+#: gkl-postavatar.php:402
+#: gkl-postavatar.php:461
+msgid "Default options"
+msgstr "Opciones predefinidas"
+
+#: gkl-postavatar.php:405
+#: gkl-postavatar.php:464
+msgid "Path to Images Folder:"
+msgstr "Ruta de la carpeta de imágenes:"
+
+#: gkl-postavatar.php:406
+#: gkl-postavatar.php:466
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr "No debe dejar el campo en blanco. El directorio debe existir."
+
+#: gkl-postavatar.php:412
+#: gkl-postavatar.php:471
+msgid "Show image in Write Post Page?"
+msgstr "Mostrar imagen en la página de escribir entrada?"
+
+#: gkl-postavatar.php:416
+#: gkl-postavatar.php:481
+msgid "Scan the images directory and its sub-directories?"
+msgstr "Examinar el directorio de las imágenes y sus sub-directorios?"
+
+#: gkl-postavatar.php:420
+#: gkl-postavatar.php:473
+msgid "Show avatar in post? Disable to use template tag"
+msgstr "Mostrar el avatar en el post? Deshabilitar el uso de código de plantilla"
+
+#: gkl-postavatar.php:424
+#: gkl-postavatar.php:491
+msgid "Customize HTML/CSS"
+msgstr "Personalizar HTML/CSS"
+
+#: gkl-postavatar.php:427
+#: gkl-postavatar.php:496
+msgid "Use this HTML before/after the post avatar image"
+msgstr "Utilizar el código HTML antes/después del post para el avatar "
+
+#: gkl-postavatar.php:428
+#: gkl-postavatar.php:437
+#: gkl-postavatar.php:498
+#: gkl-postavatar.php:506
+msgid "You can leave this field blank."
+msgstr "Puede dejar este campo en blanco."
+
+#: gkl-postavatar.php:436
+#: gkl-postavatar.php:504
+msgid "Use this CSS class for the post avatar image"
+msgstr "Utilice la clase CSS para la imagen avatar del post"
+
+#: gkl-postavatar.php:444
+msgid "Get image size?"
+msgstr "Dimensionar imagen?"
+
+#: gkl-postavatar.php:445
+msgid "Disable this feature if you encounter getimagesize errors"
+msgstr "Desactivar esta fución si encuentra errores en el tamaño de la imagen"
+
+#: gkl-postavatar.php:449
+msgid "Show post avatars in feeds?"
+msgstr "Mostrar avatares en el feed?"
+
+#: gkl-postavatar.php:450
+#: gkl-postavatar.php:485
+msgid "Check here to display post avatars in your rss feeds"
+msgstr "Marque aquí si quiere mostrar los avatares en sus feeds rss"
+
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
+msgid "Update Options"
+msgstr "Actualizar opciones"
+
+#: gkl-postavatar.php:470
+msgid "Display"
+msgstr "Mostrar"
+
+#: gkl-postavatar.php:495
+msgid "HTML"
+msgstr "HTML"
+
+#: gkl-postavatar.php:503
+msgid "CSS"
+msgstr "CSS"
+
+#: gkl-postavatar.php:480
+msgid "Others"
+msgstr "Otros"
+
+#: gkl-postavatar.php:483
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr "Obtener tamaño de la imagen. Desactive esta opción si se muestran errores en el tamaño de las imágenes"
+
+#: gkl-postavatar.php:511
+msgid "Save Changes"
+msgstr "Guardar cambios"
+

@@ -1,0 +1,148 @@
+# Localization file for the plugin Post Avatar originally created by Garinungkadol.
+# pAva.pot was created MANUALLY. So don't care about misseing strings - I forgot them. --Dominik Menke
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar 1.2.7\n"
+"POT-Creation-Date: 2008-03-31 18:00+0100\n"
+"PO-Revision-Date: 2010-03-13 18:27+0100\n"
+"Last-Translator: Lelkoun <vydrus@klikni.cz>\n"
+"Language-Team: CZECH <vydrus@klikni.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+
+#: gkl-postavatar.php:178
+#: gkl-postavatar.php:678
+msgid "Post Avatar"
+msgstr "Post Avatar"
+
+#: gkl-postavatar.php:227
+msgid "Select an avatar"
+msgstr "Vybrat avatar"
+
+#: gkl-postavatar.php:234
+#: gkl-postavatar.php:270
+msgid "No avatar selected"
+msgstr "Žádný avatar nebyl vybrán"
+
+#: gkl-postavatar.php:257
+msgid "Preview"
+msgstr "Náhled"
+
+#: gkl-postavatar.php:267
+msgid "Avatar does not exist"
+msgstr "Avatar neexistuje"
+
+#: gkl-postavatar.php:322
+msgid "Post Avatar Options"
+msgstr "Post Avatar - Volby"
+
+#: gkl-postavatar.php:394
+msgid "Post Avatar Settings"
+msgstr "Posta Avatar - Nastavení"
+
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
+msgid "Update options"
+msgstr "Aktualizovat nastavení"
+
+#: gkl-postavatar.php:402
+#: gkl-postavatar.php:461
+msgid "Default options"
+msgstr "Výchozí nastavení"
+
+#: gkl-postavatar.php:405
+#: gkl-postavatar.php:464
+msgid "Path to Images Folder:"
+msgstr "Cesta k adresáři obrázků"
+
+#: gkl-postavatar.php:406
+#: gkl-postavatar.php:466
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr "Nesmíte nechat toto pole prázdné. Adresář musí existovat."
+
+#: gkl-postavatar.php:412
+#: gkl-postavatar.php:471
+msgid "Show image in Write Post Page?"
+msgstr "Zobrazit obrázek na stránce s editorem příspěvku"
+
+#: gkl-postavatar.php:416
+#: gkl-postavatar.php:481
+msgid "Scan the images directory and its sub-directories?"
+msgstr "Skenovat adresář obrázků a podadresáře"
+
+#: gkl-postavatar.php:420
+#: gkl-postavatar.php:473
+msgid "Show avatar in post? Disable to use template tag"
+msgstr "Zobrazit obrázek v příspěvku (nevybírejte, pokud chcete použít tag v šabloně)"
+
+#: gkl-postavatar.php:424
+#: gkl-postavatar.php:491
+msgid "Customize HTML/CSS"
+msgstr "Uživatelské HTML/CSS"
+
+#: gkl-postavatar.php:427
+#: gkl-postavatar.php:496
+msgid "Use this HTML before/after the post avatar image"
+msgstr "HTML kód uzavírající obrázek v příspěvku"
+
+#: gkl-postavatar.php:428
+#: gkl-postavatar.php:437
+#: gkl-postavatar.php:498
+#: gkl-postavatar.php:506
+msgid "You can leave this field blank."
+msgstr "Toto pole můžete nechat prázdné."
+
+#: gkl-postavatar.php:436
+#: gkl-postavatar.php:504
+msgid "Use this CSS class for the post avatar image"
+msgstr "CSS třída pro obrázek v příspěvku"
+
+#: gkl-postavatar.php:444
+msgid "Get image size?"
+msgstr "Získat velikost obrázku"
+
+#: gkl-postavatar.php:445
+msgid "Disable this feature if you encounter getimagesize errors"
+msgstr "Zablokujte tuto funkci, pokud narážíte na chyby ohledně velikosti obrázku"
+
+#: gkl-postavatar.php:449
+msgid "Show post avatars in feeds?"
+msgstr "Zobrazit avatar v RSS kanálu"
+
+#: gkl-postavatar.php:450
+#: gkl-postavatar.php:485
+msgid "Check here to display post avatars in your rss feeds"
+msgstr "Zobrazit avatary ve vašich RSS kanálech"
+
+#: gkl-postavatar.php:400
+#: gkl-postavatar.php:456
+msgid "Update Options"
+msgstr "Aktualizovat nastavení"
+
+#: gkl-postavatar.php:470
+msgid "Display"
+msgstr "Zobrazení"
+
+#: gkl-postavatar.php:495
+msgid "HTML"
+msgstr "HTML"
+
+#: gkl-postavatar.php:503
+msgid "CSS"
+msgstr "CSS"
+
+#: gkl-postavatar.php:480
+msgid "Others"
+msgstr "Další"
+
+#: gkl-postavatar.php:483
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr "Získat rozměry obrázku. Zablokujte tuto funkci, pokud narážíte na chyby ohledně velikosti obrázku"
+
+#: gkl-postavatar.php:511
+msgid "Save Changes"
+msgstr "Uložit změny"
+
