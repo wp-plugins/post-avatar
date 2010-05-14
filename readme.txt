@@ -2,9 +2,9 @@
 Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
-Requires at least: 2.0.11
-Tested up to: 2.9.2
-Stable tag: 1.2.7.1
+Requires at least: 2.8
+Tested up to: 3.0-beta1
+Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
 
@@ -12,7 +12,6 @@ Choose an avatar from a pre-defined list to include in a post.
 This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://WordPress.gaw2006.de).
 
 Translations:
-
 * German (de_DE) [Dominik Menke](http://WordPress.gaw2006.de)
 * Italian (it_IT) [Gianni Diurno](http://gidibao.net)
 * Belorussian (ru_RU) [Fat Cower](http://www.fatcow.com)
@@ -107,9 +106,8 @@ For improved integration with third-party WordPress themes, Post Avatar has two 
 
 **OVERRIDE AUTOMATIC DISPLAY OF POST AVATARS
 
-In case users automatic display of avatars set to on, use the tag:
-        gkl_dev_override(true); 
-Place at the start of your theme's functions.php
+In case users automatic display of avatars is set to, use the [remove_filter()](http://codex.wordpress.org/Function_Reference/remove_filter)
+
 
 **CUSTOM OUTPUT
 
@@ -122,6 +120,10 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 
 == Changelog ==
+= 1.3 = 
+(05/14/2010)
+* Version Upgrade: Removed usage of deprecated WordPress functions. This version supports WordPress 2.8 and greater.
+
 = 1.2.7.1 =
 (03/11/2010)
 * Added: Spanish translation. Thanks to [gogollack](http://queestapasando.co.cc/).
@@ -205,5 +207,5 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 * Initial release
 
 == Upgrade Notice ==
-= 1.2.7.1=
-Added translations for Spanish and Czech.
+= 1.3 =
+This is a version update. Please only upgrade if you are using WordPress 2.8 or greater.

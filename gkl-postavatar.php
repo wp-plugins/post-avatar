@@ -4,7 +4,7 @@
 	Plugin URI: http://www.garinungkadol.com/downloads/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. Developed with <a href="http://wordpress.gaw2006.de">Dominik Menke</a>.
 	Author: Vicky Arulsingam
-	Version: 1.2.7.1
+	Version: 1.3
 	Author URI: http://garinungkadol.com
 */
 
@@ -14,16 +14,27 @@ if (eregi(basename(__FILE__),$_SERVER['PHP_SELF'])) {
 	exit;
 }
 
+/* PLUGIN and WP-CONTENT directory constants if not already defined */
+if ( ! defined( 'WP_PLUGIN_URL' ) )
+	define( 'WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' );
+if ( ! defined( 'WP_PLUGIN_DIR' ) )
+	define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' );
+if ( ! defined( 'WP_CONTENT_URL' ) )
+	define( 'WP_CONTENT_URL', get_option( 'siteurl' ) . '/wp-content' );
+if ( ! defined( 'WP_CONTENT_DIR' ) )
+	define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
+	
+	
 /**
  * Load Text-Domain
  */
-load_plugin_textdomain('gklpa', 'wp-content/plugins/post-avatar/languages/');
+load_plugin_textdomain('gklpa', false, WP_PLUGIN_DIR . '/post-avatar/languages/');
 
 
 /**
  * OPTIONS
  */
-$gklpa_siteurl = get_settings('siteurl');
+$gklpa_siteurl = get_option('siteurl');
 $gkl_myAvatarDir = str_replace('/', DIRECTORY_SEPARATOR, ABSPATH . get_option('gklpa_mydir')); // Updated absolute path to images folder (takes into account Win servers)
 $gkl_AvatarURL = trailingslashit($gklpa_siteurl) . get_option('gklpa_mydir'); // URL to images folder
 $gkl_ShowAvatarInPost = get_option('gklpa_showinwritepage'); // Show image in Write Page?
@@ -31,10 +42,6 @@ $gkl_ScanRecursive = get_option('gklpa_scanrecursive'); // Recursive scan of the
 $gkl_ShowInContent = get_option('gklpa_showincontent'); // Show avatar automatically in content?
 $gkl_getsize = get_option('gklpa_getsize'); // Use getimagesize?
 $gkl_dev_override = false;
-
-
-
-
 
 /**
  * Display post avatar within The Loop
@@ -161,7 +168,7 @@ function gkl_postavatar_dbx_admin() {
 		global $gkl_myAvatarDir, $gkl_AvatarURL, $gkl_ShowAvatarInPost, $gkl_ScanRecursive;
 			
 		// Get current post's avatar
-		$post_id = attribute_escape($_GET['post']);
+		$post_id = esc_attr($_GET['post']);
 		$CurrAvatar = get_post_meta($post_id, 'postuserpic');
 		$selected = ltrim( $CurrAvatar[0], '/' );
 	
@@ -196,7 +203,7 @@ function gkl_postavatar_metabox_admin() {
 		global $gkl_myAvatarDir, $gkl_AvatarURL, $gkl_ShowAvatarInPost, $gkl_ScanRecursive;
 			
 		// Get current post's avatar
-		$post_id = attribute_escape($_GET['post']);
+		$post_id = esc_attr($_GET['post']);
 		$CurrAvatar = get_post_meta($post_id, 'postuserpic');
 		$selected = ltrim( $CurrAvatar[0], '/' );
 	
@@ -227,7 +234,7 @@ function gkl_avatar_html($AvatarList, $CurrAvatar, $selected) {
 							<th width="20%"><?php _e('Select an avatar', 'gklpa'); ?></th>
 							<td align="center">
 							<?php if ($gkl_ShowAvatarInPost) { ?>
-							<a href="#prev" onclick="prevPostAvatar();return false" class="pa"><img src="<?php echo $gklpa_siteurl .'/wp-content/plugins/post-avatar/images/prev.png'; ?>" alt="prev" title="" /></a>
+							<a href="#prev" onclick="prevPostAvatar();return false" class="pa"><img src="<?php echo WP_PLUGIN_URL . '/post-avatar/images/prev.png'; ?>" alt="prev" title="" /></a>
 	<?php } ?>
 		
 								<select name="postuserpic" id="postuserpic" onchange="chPostAvatar(this)">
@@ -245,7 +252,7 @@ function gkl_avatar_html($AvatarList, $CurrAvatar, $selected) {
 								</select>
 	<?php if ($gkl_ShowAvatarInPost) { ?>
 							
-							<a href="#next" onclick="nextPostAvatar();return false" class="pa"><img src="<?php echo $gklpa_siteurl .'/wp-content/plugins/post-avatar/images/next.png'; ?>" alt="next" title="" /></a>
+							<a href="#next" onclick="nextPostAvatar();return false" class="pa"><img src="<?php echo WP_PLUGIN_URL . '/post-avatar/images/next.png'; ?>" alt="next" title="" /></a>
 	<?php } ?>
 							</td>
 						</tr>
@@ -264,10 +271,10 @@ function gkl_avatar_html($AvatarList, $CurrAvatar, $selected) {
 						$CurrAvatarLoc = $gkl_AvatarURL . $CurrAvatar[0];
 						echo '<img id="postavatar" src="'. $CurrAvatarLoc .'" alt="Avatar" />';
 					} else {
-						echo '<img id="postavatar" src="'. get_settings('siteurl') .'/wp-content/plugins/post-avatar/images/missing_avatar.png" alt="'. __('Avatar Does Not Exist', 'gklpa') .'" />';
+						echo '<img id="postavatar" src="'. WP_PLUGIN_URL . '/post-avatar/images/missing_avatar.png" alt="'. __('Avatar Does Not Exist', 'gklpa') .'" />';
 					}
 				} else {
-					echo '<img id="postavatar" src="'. get_settings('siteurl') .'/wp-content/plugins/post-avatar/images/no_avatar.png" alt="'. __('No Avatar selected', 'gklpa') .'" />';
+					echo '<img id="postavatar" src="'. WP_PLUGIN_URL . '/post-avatar/images/no_avatar.png" alt="'. __('No Avatar selected', 'gklpa') .'" />';
 				}
 	
 			?></td>
@@ -298,7 +305,7 @@ function gkl_avatar_edit($postid) {
 		if ( !wp_verify_nonce($_POST['postuserpic-key'], 'postuserpic') )
 			return $postid;
 	
-	if(function_exists('attribute_escape'))	$meta_value =  attribute_escape($_POST['postuserpic']) ;
+	if(function_exists('esc_attr'))	$meta_value =  esc_attr($_POST['postuserpic']) ;
 	else  $meta_value = wp_specialchars($_POST['postuserpic']) ;
 	$CheckAvatar = $gkl_myAvatarDir . $meta_value;
 
@@ -319,7 +326,7 @@ function gkl_avatar_edit($postid) {
  */
 function postavatar_admin() {
 	if ( function_exists('add_options_page') ) {
-		add_options_page(__('Post Avatar Options', 'gklpa'), 'Post Avatar', 8, basename(__FILE__), 'postavatar_admin_form');
+		add_options_page(__('Post Avatar Options', 'gklpa'), 'Post Avatar', 'manage_options', basename(__FILE__), 'postavatar_admin_form');
 	}
 }
 
@@ -329,19 +336,16 @@ function postavatar_admin() {
  */
 function postavatar_admin_form() {
 	
-	if(function_exists('add_meta_box')) $old_wp = false;
-	else $old_wp = true;
-	
 	// Add default Post Avatar settings
-	add_option('gklpa_mydir', 'wp-content/uploads/icons/', 'Location of images folder', 'yes');
-	add_option('gklpa_showinwritepage', 1, 'Show image in Write Post Page?', 'yes');
-	add_option('gklpa_scanrecursive', 1, 'Recursive scan of the images?', 'yes');
-	add_option('gklpa_showincontent', 1, 'Show avatar with post content', 'yes');
-	add_option('gklpa_class', '', 'CSS class for the post avatar image', 'yes');
-	add_option('gklpa_before', '&lt;div class=\&quot;postavatar\&quot;&gt;', 'HTML used before each post avatar', 'yes');
-	add_option('gklpa_after', '&lt;/div&gt;', 'HTML used after each post avatar', 'yes');
-	add_option('gklpa_getsize', 1 , 'Get image size', 'yes');
-	add_option('gklpa_showinfeeds', 0, 'Show avatars in feeds', 'yes');
+	add_option('gklpa_mydir', 'wp-content/uploads/icons/', '', 'yes');
+	add_option('gklpa_showinwritepage', 1, '', 'yes');
+	add_option('gklpa_scanrecursive', 1, '', 'yes');
+	add_option('gklpa_showincontent', 1, '', 'yes');
+	add_option('gklpa_class', '', '', 'yes');
+	add_option('gklpa_before', '&lt;div class=\&quot;postavatar\&quot;&gt;', '', 'yes');
+	add_option('gklpa_after', '&lt;/div&gt;', '', 'yes');
+	add_option('gklpa_getsize', 1 , '', 'yes');
+	add_option('gklpa_showinfeeds', 0, '', 'yes');
 	
 
 	$gklpa_mydir = get_option('gklpa_mydir');
@@ -358,16 +362,11 @@ function postavatar_admin_form() {
 	if ( isset($_POST['submit']) ) {
 	
 	   if ( function_exists('current_user_can') && !current_user_can('manage_options') )
-	      die(__('Cheatin’ uh?'));
+	      die(__('Cheatin uh?', 'gklpa'));
 	      
 		check_admin_referer('gkl_postavatar_form');
 
-		if (function_exists('attribute_escape'))
-			 $gklpa_mydir = attribute_escape(trailingslashit(rtrim($_POST['gklpa_mydir'], '/')));
-		else 
-			$gklpa_mydir = wp_specialchars(trailingslashit(rtrim($_POST['gklpa_mydir'], '/')));
-	
-		
+		$gklpa_mydir = esc_attr(trailingslashit(rtrim($_POST['gklpa_mydir'], '/')));
 		$gklpa_showinwritepage = gkl_validate_checked($_POST['gklpa_showinwritepage']);
 		$gklpa_scanrecursive = gkl_validate_checked($_POST['gklpa_scanrecursive']);
 		$gklpa_showincontent = gkl_validate_checked($_POST['gklpa_showincontent']);		
@@ -394,70 +393,7 @@ function postavatar_admin_form() {
 	<h2><?php _e('Post Avatar Settings', 'gklpa'); ?></h2>
 	<form name="gkl_postavatar" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=gkl-postavatar.php&amp;updated=true">
 		<input type="hidden" name="gkl_postavatar_options" value="1" /> <?php if ( function_exists('wp_nonce_field') ) wp_nonce_field('gkl_postavatar_form'); ?>
-		<?php if($old_wp) { ?>
 
-		<fieldset>
-			<p class="submit"><input type="submit" name="submit" value="<?php _e('Update Options', 'gklpa') ?> &raquo;" /></p>
-			<table width="100%" align="center" cellpadding="5" cellspacing="5">
-				<tr><td colspan="2"><h3><?php _e('Default options', 'gklpa'); ?></h3></td></tr>
-				<tr>
-					<td align="right" valign="top">
-						<strong><?php _e('Path to Images Folder:', 'gklpa'); ?></strong><br />
-						<small><?php _e('You must not leave this field blank. The directory also must exist.', 'gklpa'); ?></small>
-					</td>
-					<td align="left" valign="top"><input name="gklpa_mydir" type="text" id="gklpa_mydir" value="<?php echo $gklpa_mydir; ?>" size="50" /></td>
-				</tr>
-				<tr>
-					<td align="right" valign="top"> </td>
-					<td align="left" valign="top"><input name="gklpa_showinwritepage" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_showinwritepage')); ?> /> <label for="gklpa_showinwritepage"><?php _e('Show image in Write Post Page?', 'gklpa'); ?></label></td>
-				</tr>
-				<tr>
-					<td align="right" valign="top"> </td>
-					<td align="left" valign="top"><input name="gklpa_scanrecursive" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_scanrecursive')); ?> /> <label for="gklpa_scanrecursive"><?php _e('Scan the images directory and its sub-directories?', 'gklpa'); ?></label></td>
-				</tr>
-				<tr>
-					<td align="right" valign="top"> </td>
-					<td align="left" valign="top"><input name="gklpa_showincontent" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_showincontent')); ?> /> <label for="gklpa_showincontent"><?php _e('Show avatar in post? Disable to use template tag', 'gklpa'); ?></label></td>
-				</tr>
-				
-				
-				<tr><td colspan="2"><h3><?php _e('Customize HTML/CSS', 'gklpa'); ?></h3></td></tr>
-				<tr>
-					<td align="right" valign="top">
-						<strong><?php _e('Use this HTML before/after the post avatar image', 'gklpa'); ?></strong><br />
-						<small><?php _e('You can leave this field blank.', 'gklpa'); ?></small>
-					</td>
-					<td align="left" valign="top">
-						<input name="gklpa_before" type="text" value="<?php echo stripslashes($gklpa_before); ?>" /> / <input name="gklpa_after" type="text" value="<?php echo stripslashes($gklpa_after); ?>" />
-					</td>
-				</tr>
-				<tr>
-					<td align="right" valign="top">
-						<strong><?php _e('Use this CSS class for the post avatar image', 'gklpa'); ?></strong><br />
-						<small><?php _e('You can leave this field blank.', 'gklpa'); ?></small>
-					</td>
-					<td align="left" valign="top"><input name="gklpa_class" type="text" value="<?php echo $gklpa_class; ?>" /></td>
-				</tr>
-				
-				
-				<tr>
-					<td align="right" valign="top"> <strong><?php _e('Get image size?', 'gklpa'); ?></strong><br /></td>
-					<td align="left" valign="top"><input name="gklpa_getsize" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_getsize')); ?> /> <label for="gklpa_getsize"><?php _e('Disable this feature if you encounter getimagesize errors', 'gklpa'); ?></label></td>
-				</tr>
-				
-				<tr>
-					<td align="right" valign="top"> <strong><?php _e('Show post avatars in feeds?', 'gklpa'); ?></strong><br /></td>
-					<td align="left" valign="top"><input name="gklpa_showinfeeds" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_showinfeeds')); ?> /> <label for="gklpa_showinfeeds"><?php _e('Check here to display post avatars in your rss feeds', 'gklpa'); ?></label></td>
-				</tr>
-				
-				
-				
-			</table>
-			<div class="submit"><input type="submit" name="submit" value="<?php _e('Update Options', 'gklpa') ?> &raquo;" /></div>
-		</fieldset>
-			
-	
-		<?php } else { ?>
 		<h3><?php _e('Default options', 'gklpa'); ?></h3>
 		<table class="form-table">
 		<tr valign="top">
@@ -468,9 +404,9 @@ function postavatar_admin_form() {
 		</tr>
 		<tr valign="top">
 		<th scope="row"><?php _e('Display', 'gklpa'); ?></th>
-		<td><input name="gklpa_showinwritepage" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_showinwritepage')); ?> /> <?php _e('Show image in Write Post Page?', 'gklpa'); ?><br />
+		<td><input name="gklpa_showinwritepage" type="checkbox" value="1" <?php checked('1', get_option('gklpa_showinwritepage')); ?> /> <?php _e('Show image in Write Post Page?', 'gklpa'); ?><br />
 		
-		<input name="gklpa_showincontent" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_showincontent')); ?> /> <?php _e('Show avatar in post? Disable to use template tag', 'gklpa'); ?>
+		<input name="gklpa_showincontent" type="checkbox" value="1" <?php checked('1', get_option('gklpa_showincontent')); ?> /> <?php _e('Show avatar in post? Disable to use template tag', 'gklpa'); ?>
 		
 		</td>
 		</tr>
@@ -478,11 +414,11 @@ function postavatar_admin_form() {
 		
 		<tr valign="top">
 		<th scope="row"><?php _e('Others', 'gklpa'); ?></th>
-		<td><input name="gklpa_scanrecursive" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_scanrecursive')); ?> /> <?php _e('Scan the images directory and its sub-directories?', 'gklpa'); ?><br />
+		<td><input name="gklpa_scanrecursive" type="checkbox" value="1" <?php checked('1', get_option('gklpa_scanrecursive')); ?> /> <?php _e('Scan the images directory and its sub-directories?', 'gklpa'); ?><br />
 		
-		<input name="gklpa_getsize" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_getsize')); ?> /> <?php _e('Get image dimensions. Disable this feature if you encounter getimagesize errors', 'gklpa'); ?><br />
+		<input name="gklpa_getsize" type="checkbox" value="1" <?php checked('1', get_option('gklpa_getsize')); ?> /> <?php _e('Get image dimensions. Disable this feature if you encounter getimagesize errors', 'gklpa'); ?><br />
 		
-		<input name="gklpa_showinfeeds" type="checkbox" value="1" <?php checked('1', get_settings('gklpa_showinfeeds')); ?> /> <?php _e('Check here to display post avatars in your rss feeds', 'gklpa'); ?>
+		<input name="gklpa_showinfeeds" type="checkbox" value="1" <?php checked('1', get_option('gklpa_showinfeeds')); ?> /> <?php _e('Check here to display post avatars in your rss feeds', 'gklpa'); ?>
 		
 		</td>
 		</tr>
@@ -509,9 +445,8 @@ function postavatar_admin_form() {
 		</table>
 		
 		<p class="submit"><input type="submit" name="submit" value="<?php _e('Save Changes', 'gklpa') ?> &raquo;" /></p>
-		
-		<?php } ?>
-	</form>
+
+		</form>
 </div><?php
 }
 
@@ -538,12 +473,10 @@ function gkl_unescape_html($value) {
  */
 function gkl_validate_checked($option) {
 
-	if (function_exists('attribute_escape'))
-		$value = attribute_escape($option);
-	else
-		$value = wp_specialchars($option);
-		
-	if (!empty($value)) $value = 1;
+	$value = esc_attr($option);
+	if (!empty($value)) 
+		$value = 1;
+	
 	return $value;
 }
 
@@ -611,9 +544,10 @@ function gkl_admin_head() {
 //<![CDATA[
 var gkl_site = "<?php echo $gklpa_siteurl; ?>";
 var gkl_avatar = "<?php echo $gkl_AvatarURL; ?>";
+var gkl_avatar_img = "<?php echo WP_PLUGIN_URL . '/post-avatar/images'; ?>";
 //]]>
 </script>
-<script type="text/javascript" src="<?php echo get_option('siteurl');?>/wp-content/plugins/post-avatar/head/gkl-postavatar.js"></script>
+<script type="text/javascript" src="<?php echo WP_PLUGIN_URL ;?>/post-avatar/head/gkl-postavatar.js"></script>
 <?php
 	}
 
@@ -626,7 +560,7 @@ var gkl_avatar = "<?php echo $gkl_AvatarURL; ?>";
  * Display css where needed
  */
 function gkl_postavatar_showcss() {
-	echo '<link rel="stylesheet" type="text/css" href="'. get_option('siteurl') . '/wp-content/plugins/post-avatar/head/gkl-postavatar.css" />';
+	echo '<link rel="stylesheet" type="text/css" href="'. WP_PLUGIN_URL . '/post-avatar/head/gkl-postavatar.css" />';
 }
 
 
@@ -674,11 +608,8 @@ add_action('admin_menu', 'postavatar_admin');
 // Add meta box
 add_action('admin_menu', 'postavatar_add_meta_box');
 function postavatar_add_meta_box() {
-	if (function_exists('add_meta_box')) {
-		add_meta_box('postavatardiv', __('Post Avatar', 'gklpa'), 'gkl_postavatar_metabox_admin', 'post');
-	} else {
-		add_action('dbx_post_advanced', 'gkl_postavatar_dbx_admin');
-	} 
+	add_meta_box('postavatardiv', __('Post Avatar', 'gklpa'), 'gkl_postavatar_metabox_admin', 'post');
+
 }
 
 add_action('edit_post', 'gkl_avatar_edit');
