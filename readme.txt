@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.8
-Tested up to: 3.0-beta1
+Tested up to: 3.0
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
