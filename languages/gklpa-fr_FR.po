@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-14 11:36+0800\n"
+"PO-Revision-Date: 2010-08-23 10:22+0100\n"
+"Last-Translator: Mathieu Haratyk <mharatyk@eduens.com>\n"
+"Language-Team: Dominik Menke <dominik.menke@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gkl-postavatar.php:185
+#: gkl-postavatar.php:611
+msgid "Post Avatar"
+msgstr "Post Avatar"
+
+#: gkl-postavatar.php:234
+msgid "Select an avatar"
+msgstr "Sélectionner un avatar"
+
+#: gkl-postavatar.php:241
+#: gkl-postavatar.php:277
+msgid "No Avatar selected"
+msgstr "Pas d'avatar sélectionné"
+
+#: gkl-postavatar.php:264
+msgid "Preview"
+msgstr "Prévisualisation"
+
+#: gkl-postavatar.php:274
+msgid "Avatar Does Not Exist"
+msgstr "L'avatar n'existe pas"
+
+#: gkl-postavatar.php:329
+msgid "Post Avatar Options"
+msgstr "Options de Post Avatar"
+
+#: gkl-postavatar.php:365
+msgid "Cheatin uh?"
+msgstr "Cheatin uh?"
+
+#: gkl-postavatar.php:393
+msgid "Post Avatar Settings"
+msgstr "Configuration de Post Avatar"
+
+#: gkl-postavatar.php:397
+msgid "Default options"
+msgstr "Options par défaut"
+
+#: gkl-postavatar.php:400
+msgid "Path to Images Folder:"
+msgstr "Chemin vers le répertoire des images"
+
+#: gkl-postavatar.php:402
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr "Ce champ ne peut être vide. Le répertoire désigné doit exister."
+
+#: gkl-postavatar.php:406
+msgid "Display"
+msgstr "Afficher"
+
+#: gkl-postavatar.php:407
+msgid "Show image in Write Post Page?"
+msgstr "Afficher l'image dans la page de saisie de message"
+
+#: gkl-postavatar.php:409
+msgid "Show avatar in post? Disable to use template tag"
+msgstr "Affiche l'avatar dans le message. Désactiver pour utiliser le tag de template."
+
+#: gkl-postavatar.php:416
+msgid "Others"
+msgstr "Autres"
+
+#: gkl-postavatar.php:417
+msgid "Scan the images directory and its sub-directories?"
+msgstr "Scanner le dossier d'images et ses sous-dossiers ?"
+
+#: gkl-postavatar.php:419
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr "Obtenir les dimensions de l'image. Désactiver cette fonctionnalité en cas d'erreur lors de l'obtention des dimensions."
+
+#: gkl-postavatar.php:421
+msgid "Check here to display post avatars in your rss feeds"
+msgstr "Cliquer ici pour afficher les avatars dans les flux RSS"
+
+#: gkl-postavatar.php:427
+msgid "Customize HTML/CSS"
+msgstr "Personnaliser HTML/CSS"
+
+#: gkl-postavatar.php:431
+msgid "HTML"
+msgstr "HTML"
+
+#: gkl-postavatar.php:432
+msgid "Use this HTML before/after the post avatar image"
+msgstr "Utiliser ce HTML avant/après l'avatar"
+
+#: gkl-postavatar.php:434
+#: gkl-postavatar.php:442
+msgid "You can leave this field blank."
+msgstr "Vous pouvez laisser ce champ vide"
+
+#: gkl-postavatar.php:439
+msgid "CSS"
+msgstr "CSS"
+
+#: gkl-postavatar.php:440
+msgid "Use this CSS class for the post avatar image"
+msgstr "Utiliser cette classe CSS pour l'image d'avatar"
+
+#: gkl-postavatar.php:447
+msgid "Save Changes"
+msgstr "Sauver les changements"
+
