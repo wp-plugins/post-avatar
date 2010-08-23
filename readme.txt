@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.8
-Tested up to: 3.0
+Tested up to: 3.0.1
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -18,6 +18,8 @@ Translations:
 * Dutch (nl_NL) [Jay August](http://www.jayaugust.com)
 * Spanish (es_ES) [gogollack](http://queestapasando.co.cc/)
 * Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
+* French (fr_FR) [Mathieu Haratyk](http://www.eduens.com)
+
 
 
 = Features =
@@ -120,6 +122,11 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 
 == Changelog ==
+= 1.3.1 = 
+(08/23/2010)
+* Added: French translation. Thanks to [Mathieu Haratyk](http://www.eduens.com).
+
+
 = 1.3 = 
 (05/14/2010)
 * Version Upgrade: Removed usage of deprecated WordPress functions. This version supports WordPress 2.8 and greater.
