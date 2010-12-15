@@ -12,12 +12,19 @@ Choose an avatar from a pre-defined list to include in a post.
 This plugin simplifies including a picture when writing posts by allowing the user to choose from a predefined list of images. The image can be automatically shown on the page or output customized with the use of a template tag in themes. This plugin is similar to Livejournal userpics. Developed with [Dominik Menke](http://WordPress.gaw2006.de).
 
 Translations:
+
 * German (de_DE) [Dominik Menke](http://WordPress.gaw2006.de)
+
 * Italian (it_IT) [Gianni Diurno](http://gidibao.net)
+
 * Belorussian (ru_RU) [Fat Cower](http://www.fatcow.com)
+
 * Dutch (nl_NL) [Jay August](http://www.jayaugust.com)
+
 * Spanish (es_ES) [gogollack](http://queestapasando.co.cc/)
+
 * Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
+
 * French (fr_FR) [Mathieu Haratyk](http://www.eduens.com)
 
 
@@ -34,6 +41,8 @@ Translations:
 * Customize html output of avatars.
 
 * Does not display missing images.
+
+Please visit the [Post Avatar home page](http://garinungkadol.com/plugins/post-avatar/) for more information.
 
 == Installation ==
 1. Download the plugin.
