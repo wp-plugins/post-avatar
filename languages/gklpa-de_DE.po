@@ -2,119 +2,119 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Avatar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-14 11:36+0800\n"
-"PO-Revision-Date: 2010-05-14 11:36+0800\n"
+"POT-Creation-Date: 2011-04-13 16:13+0800\n"
+"PO-Revision-Date: 2011-04-13 16:27+0800\n"
 "Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
 "Language-Team: Dominik Menke <dominik.menke@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: gkl-postavatar.php:185
-#: gkl-postavatar.php:611
+#: gkl-postavatar.php:198
+#: gkl-postavatar.php:627
 msgid "Post Avatar"
 msgstr "Post-Avatar"
 
-#: gkl-postavatar.php:234
+#: gkl-postavatar.php:247
 msgid "Select an avatar"
 msgstr "W&auml;hle einen Avatar f&uuml;r diesen Beitrag"
 
-#: gkl-postavatar.php:241
-#: gkl-postavatar.php:277
+#: gkl-postavatar.php:254
+#: gkl-postavatar.php:290
 msgid "No Avatar selected"
 msgstr "Es wurde kein Avatar ausgew&auml;hlt."
 
-#: gkl-postavatar.php:264
+#: gkl-postavatar.php:277
 msgid "Preview"
 msgstr "Vorschau"
 
-#: gkl-postavatar.php:274
+#: gkl-postavatar.php:287
 msgid "Avatar Does Not Exist"
 msgstr "existiert nicht."
 
-#: gkl-postavatar.php:329
+#: gkl-postavatar.php:342
 msgid "Post Avatar Options"
 msgstr "Post-Avatar-Optionen"
 
-#: gkl-postavatar.php:365
+#: gkl-postavatar.php:378
 msgid "Cheatin uh?"
 msgstr "Cheatin uh?"
 
-#: gkl-postavatar.php:393
+#: gkl-postavatar.php:406
 msgid "Post Avatar Settings"
 msgstr "Post-Avatar-Optionen"
 
-#: gkl-postavatar.php:397
+#: gkl-postavatar.php:410
 msgid "Default options"
 msgstr "Default options"
 
-#: gkl-postavatar.php:400
+#: gkl-postavatar.php:413
 msgid "Path to Images Folder:"
 msgstr "Pfad zu den Avatar-Bildchen"
 
-#: gkl-postavatar.php:402
+#: gkl-postavatar.php:415
 msgid "You must not leave this field blank. The directory also must exist."
 msgstr "You must not leave this field blank. The directory also must exist."
 
-#: gkl-postavatar.php:406
+#: gkl-postavatar.php:419
 msgid "Display"
 msgstr "Display"
 
-#: gkl-postavatar.php:407
+#: gkl-postavatar.php:420
 msgid "Show image in Write Post Page?"
 msgstr "Vorschau-Bild auf der Seite <em>Schreiben &raquo; Beitrag schreiben</em> zeigen?"
 
-#: gkl-postavatar.php:409
+#: gkl-postavatar.php:422
 msgid "Show avatar in post? Disable to use template tag"
 msgstr "Show avatar in post? Disable to use template tag"
 
-#: gkl-postavatar.php:416
+#: gkl-postavatar.php:429
 msgid "Others"
 msgstr "Others"
 
-#: gkl-postavatar.php:417
+#: gkl-postavatar.php:430
 msgid "Scan the images directory and its sub-directories?"
 msgstr "Scan the images directory and its sub-directories?"
 
-#: gkl-postavatar.php:419
+#: gkl-postavatar.php:432
 msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
 msgstr "Get image dimensions. Disable this feature if you encounter getimagesize errors"
 
-#: gkl-postavatar.php:421
+#: gkl-postavatar.php:434
 msgid "Check here to display post avatars in your rss feeds"
 msgstr "Check here to display post avatars in your rss feeds"
 
-#: gkl-postavatar.php:427
+#: gkl-postavatar.php:440
 msgid "Customize HTML/CSS"
 msgstr "Customize HTML/CSS"
 
-#: gkl-postavatar.php:431
+#: gkl-postavatar.php:444
 msgid "HTML"
 msgstr "HTML"
 
-#: gkl-postavatar.php:432
+#: gkl-postavatar.php:445
 msgid "Use this HTML before/after the post avatar image"
 msgstr "Use this HTML before/after the post avatar image"
 
-#: gkl-postavatar.php:434
-#: gkl-postavatar.php:442
+#: gkl-postavatar.php:447
+#: gkl-postavatar.php:455
 msgid "You can leave this field blank."
 msgstr "You can leave this field blank."
 
-#: gkl-postavatar.php:439
+#: gkl-postavatar.php:452
 msgid "CSS"
 msgstr "CSS"
 
-#: gkl-postavatar.php:440
+#: gkl-postavatar.php:453
 msgid "Use this CSS class for the post avatar image"
 msgstr "Use this CSS class for the post avatar image"
 
-#: gkl-postavatar.php:447
+#: gkl-postavatar.php:460
 msgid "Save Changes"
 msgstr "Save Changes"
 

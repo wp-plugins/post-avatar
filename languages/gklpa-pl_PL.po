@@ -1,97 +1,97 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Post Avatar\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/post-avatar\n"
 "POT-Creation-Date: 2011-04-13 16:13+0800\n"
-"PO-Revision-Date: 2011-04-13 16:23+0800\n"
+"PO-Revision-Date: 2011-04-13 16:58+0800\n"
 "Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
-"Language-Team: Lelkoun <vydrus@klikni.cz>\n"
+"Language-Team: MELONIQ.NET <biuro@meloniq.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Language: Czech\n"
-"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: gkl-postavatar.php:198
 #: gkl-postavatar.php:627
 msgid "Post Avatar"
-msgstr "Post Avatar"
+msgstr "Awatar wpisu"
 
 #: gkl-postavatar.php:247
 msgid "Select an avatar"
-msgstr "Vybrat avatar"
+msgstr "Wybierz awatar"
 
 #: gkl-postavatar.php:254
 #: gkl-postavatar.php:290
 msgid "No Avatar selected"
-msgstr "Žádný avatar nebyl vybrán"
+msgstr "Nie wybrano awatara"
 
 #: gkl-postavatar.php:277
 msgid "Preview"
-msgstr "Náhled"
+msgstr "Podgląd"
 
 #: gkl-postavatar.php:287
 msgid "Avatar Does Not Exist"
-msgstr "Avatar neexistuje"
+msgstr "Awatar nie istnieje"
 
 #: gkl-postavatar.php:342
 msgid "Post Avatar Options"
-msgstr "Post Avatar - Volby"
+msgstr "Opcje Awataru wpisu"
 
 #: gkl-postavatar.php:378
 msgid "Cheatin uh?"
-msgstr "Cheatin uh?"
+msgstr "Oszukujemy, co?"
 
 #: gkl-postavatar.php:406
 msgid "Post Avatar Settings"
-msgstr "Posta Avatar - Nastavení"
+msgstr "Ustawienia Awataru wpisu"
 
 #: gkl-postavatar.php:410
 msgid "Default options"
-msgstr "Výchozí nastavení"
+msgstr "Domyślne opcje"
 
 #: gkl-postavatar.php:413
 msgid "Path to Images Folder:"
-msgstr "Cesta k adresáři obrázků"
+msgstr "Ścieżka do folderu zdjęć:"
 
 #: gkl-postavatar.php:415
 msgid "You must not leave this field blank. The directory also must exist."
-msgstr "Nesmíte nechat toto pole prázdné. Adresář musí existovat."
+msgstr "Nie możesz pozostawić tego pola pustego. Katalog musi także istnieć."
 
 #: gkl-postavatar.php:419
 msgid "Display"
-msgstr "Zobrazení"
+msgstr "Wyświetl"
 
 #: gkl-postavatar.php:420
 msgid "Show image in Write Post Page?"
-msgstr "Zobrazit obrázek na stránce s editorem příspěvku"
+msgstr "Wyświetlać zdjęcie na stronie pisania wpisu?"
 
 #: gkl-postavatar.php:422
 msgid "Show avatar in post? Disable to use template tag"
-msgstr "Zobrazit obrázek v příspěvku (nevybírejte, pokud chcete použít tag v šabloně)"
+msgstr "Pokazać awatar w wpisie? Wyłącz by używać tagu szablonu"
 
 #: gkl-postavatar.php:429
 msgid "Others"
-msgstr "Další"
+msgstr "Inne"
 
 #: gkl-postavatar.php:430
 msgid "Scan the images directory and its sub-directories?"
-msgstr "Scan the images directory and its sub-directories?"
+msgstr "Skanować katalog zdjęć i jego podkatalogi?"
 
 #: gkl-postavatar.php:432
 msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
-msgstr "Získat rozměry obrázku. Zablokujte tuto funkci, pokud narážíte na chyby ohledně velikosti obrázku"
+msgstr "Pobierz rozmiar zdjęcia. Wyłącz tą opcję jeśli występują błędy getimagesize"
 
 #: gkl-postavatar.php:434
 msgid "Check here to display post avatars in your rss feeds"
-msgstr "Zobrazit avatary ve vašich RSS kanálech"
+msgstr "Zaznacz tutaj aby wyświetlać awatary wpisów w kanałach rss"
 
 #: gkl-postavatar.php:440
 msgid "Customize HTML/CSS"
-msgstr "Uživatelské HTML/CSS"
+msgstr "Dostosuj HTML/CSS"
 
 #: gkl-postavatar.php:444
 msgid "HTML"
@@ -99,12 +99,12 @@ msgstr "HTML"
 
 #: gkl-postavatar.php:445
 msgid "Use this HTML before/after the post avatar image"
-msgstr "HTML kód uzavírající obrázek v příspěvku"
+msgstr "Użyj tego HTML przed/po zdjęciu awataru wpisu"
 
 #: gkl-postavatar.php:447
 #: gkl-postavatar.php:455
 msgid "You can leave this field blank."
-msgstr "Toto pole můžete nechat prázdné."
+msgstr "Możesz pozostawić to pole puste."
 
 #: gkl-postavatar.php:452
 msgid "CSS"
@@ -112,9 +112,9 @@ msgstr "CSS"
 
 #: gkl-postavatar.php:453
 msgid "Use this CSS class for the post avatar image"
-msgstr "CSS třída pro obrázek v příspěvku"
+msgstr "Użyj tej klasy CSS dla zdjęcia awataru wpisu"
 
 #: gkl-postavatar.php:460
 msgid "Save Changes"
-msgstr "Uložit změny"
+msgstr "Zapisz zmiany"
 

@@ -4,7 +4,7 @@
 	Plugin URI: http://www.garinungkadol.com/downloads/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. Developed with <a href="http://wordpress.gaw2006.de">Dominik Menke</a>.
 	Author: Vicky Arulsingam
-	Version: 1.3.1
+	Version: 1.3.2
 	Author URI: http://garinungkadol.com
 */
 
@@ -28,7 +28,7 @@ if ( ! defined( 'WP_CONTENT_DIR' ) )
 /**
  * Load Text-Domain
  */
-load_plugin_textdomain('gklpa', false, WP_PLUGIN_DIR . '/post-avatar/languages/');
+load_plugin_textdomain( 'gklpa', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 
 /**
@@ -50,13 +50,23 @@ $gkl_dev_override = false;
  * @param string $before
  * @param string $after
  */
-function gkl_postavatar($class='', $before='', $after='') {
-	global $post;
+function gkl_postavatar($class='', $before='', $after='', $do_what= 'echo') {
+	global $post, $allowedposttags;
+	
 	if (empty($class)) $class  = get_option('gklpa_class');
-	if (!empty($class)) $class = ' class="' . $class . '"';
 	if (empty($before)) $before = gkl_unescape_html(stripslashes(get_option('gklpa_before'))); 
 	if (empty($after)) $after = gkl_unescape_html(stripslashes(get_option('gklpa_after')));
 
+	# Validation & Sanitization
+	$possible_values = array( 'echo', 'return' );
+	if ( !in_array( $do_what, $possible_values ) )
+		die( 'Invalid value in gkl_postavatar template tag');
+	
+	$class = wp_kses( $class, $allowedposttags );
+	$before = wp_kses( $before, $allowedposttags );
+	$after = wp_kses( $after, $allowedposttags );
+	if (!empty($class)) $class = ' class="' . $class . '"';
+	
 	$post_avatar = gkl_get_postavatar($post);
 	$avatar_dim = '';
 
@@ -64,8 +74,11 @@ function gkl_postavatar($class='', $before='', $after='') {
 		if ($post_avatar['show_image_dim']) {
 			$avatar_dim = 'width="' . $post_avatar['image_width'] .'" height="'. $post_avatar['image_height'] .'"';
 		}
-		// Show post avatar		
-		echo $before .'<img' .$class . ' src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" />'. $after ."\n";
+		
+		$post_avatar_text = $before .'<img' .$class . ' src="'. $post_avatar['avatar_url'] .'" '. $avatar_dim . ' alt="'. $post_avatar['post_title']. '" />'. $after ."\n";
+		// Show post avatar	
+		if( $do_what == 'echo' ) echo $post_avatar_text;
+		elseif( $do_what == 'return' ) return $post_avatar_text;
 	}
 	
 }
@@ -579,9 +592,12 @@ function gkl_postavatar_filter($content) {
 	if (is_null($wp_query->posts)){ 
 		return $content; 
 	} else {
-		if (!$wp_query->is_feed && $gkl_dev_override == 0) gkl_postavatar() ; 
-		
-		return $content;
+		if (!$wp_query->is_feed && $gkl_dev_override == 0){
+				$post_avatar = gkl_postavatar('', '', '', 'return');
+				// Show post avatar		
+		}
+		$new_content = $post_avatar . $content;
+		return $new_content;
 	}
 }
 
@@ -597,9 +613,9 @@ function gkl_postavatar_feed_filter($content) {
 	
 	$showinfeeds = get_option('gklpa_showinfeeds');
 	if($showinfeeds == 1 && $wp_query->is_feed) 
-		gkl_postavatar();
+		$post_avatar = gkl_postavatar('', '', '', 'return');
 
-	return $content;
+	return $post_avatar . $content;
 }
 
 // Hook it up
@@ -622,6 +638,7 @@ add_filter('the_content', 'gkl_postavatar_feed_filter');
 // Content filter (automatic display)
 if ($gkl_ShowInContent == 1){
 	add_filter('the_content', 'gkl_postavatar_filter', 99);
+	add_filter('the_excerpt', 'gkl_postavatar_filter', 99);
 	add_filter('wp_head', 'gkl_postavatar_showcss', 99);
 }
 ?>

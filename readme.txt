@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.8
-Tested up to: 3.0.1
+Tested up to: 3.1.1
 Stable tag: trunk
 
 Choose an avatar from a pre-defined list to include in a post. 
@@ -14,32 +14,21 @@ This plugin simplifies including a picture when writing posts by allowing the us
 Translations:
 
 * German (de_DE) [Dominik Menke](http://WordPress.gaw2006.de)
-
 * Italian (it_IT) [Gianni Diurno](http://gidibao.net)
-
 * Belorussian (ru_RU) [Fat Cower](http://www.fatcow.com)
-
 * Dutch (nl_NL) [Jay August](http://www.jayaugust.com)
-
 * Spanish (es_ES) [gogollack](http://queestapasando.co.cc/)
-
 * Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
-
 * French (fr_FR) [Mathieu Haratyk](http://www.eduens.com)
-
+* Polish (pl_PL) [Meloniq](http://blog.meloniq.net)
 
 
 = Features =
 * Easy selection of images in the Write Post screen.
-
 * Scans images in sub-directories of the image option folder.
-
 * Allows the following file types: .jpg, .jpeg, .gif and .png.
-
 * Settings display avatars automatically or through the use of template tags.
-
 * Customize html output of avatars.
-
 * Does not display missing images.
 
 Please visit the [Post Avatar home page](http://garinungkadol.com/plugins/post-avatar/) for more information.
@@ -55,7 +44,7 @@ Please visit the [Post Avatar home page](http://garinungkadol.com/plugins/post-a
 4. Activate the plugin from the Plugin Management screen.
 
 
-5. Set plugin options in Options - Post Avatar. 
+5. Set plugin options in Settings - Post Avatar. 
 	* **Path to Images Folder** - location of your images folder in relation to your WordPress installation.
 
 	* **Show image in Write Post Page** - Place a tick mark if you want to see a thumbnail of the post avatar in the Write Post screen.
@@ -131,6 +120,12 @@ Please visit the [Post Avatar Page](http://www.garinungkadol.com/downloads/post-
 
 
 == Changelog ==
+= 1.3.2 =
+(04/13/2011)
+* Added: Polish translation. Thanks to [Meloniq](http://blog.meloniq.net).
+* Fixed: Duplication of post avatar when "apply_filters" tag is used in other plugins.
+* Fixed: Improved data validation. Now using wp_kses when validating HTML.
+
 = 1.3.1 = 
 (08/23/2010)
 * Added: French translation. Thanks to [Mathieu Haratyk](http://www.eduens.com).
