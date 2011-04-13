@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Avatar\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/post-avatar\n"
+"POT-Creation-Date: 2011-04-13 16:13+0800\n"
+"PO-Revision-Date: 2011-04-13 17:02+0800\n"
+"Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
+"Language-Team: Fat Cow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gkl-postavatar.php:198
+#: gkl-postavatar.php:627
+msgid "Post Avatar"
+msgstr "Post-Avatar"
+
+#: gkl-postavatar.php:247
+msgid "Select an avatar"
+msgstr "Выбрать Аватар"
+
+#: gkl-postavatar.php:254
+#: gkl-postavatar.php:290
+msgid "No Avatar selected"
+msgstr "не выбраны аватары"
+
+#: gkl-postavatar.php:277
+msgid "Preview"
+msgstr "Предосмотр"
+
+#: gkl-postavatar.php:287
+msgid "Avatar Does Not Exist"
+msgstr "Аватар не существует"
+
+#: gkl-postavatar.php:342
+msgid "Post Avatar Options"
+msgstr "Post-Avatar-Настройки"
+
+#: gkl-postavatar.php:378
+msgid "Cheatin uh?"
+msgstr "Cheatin uh?"
+
+#: gkl-postavatar.php:406
+msgid "Post Avatar Settings"
+msgstr "Post-Avatar-Настройки"
+
+#: gkl-postavatar.php:410
+msgid "Default options"
+msgstr "Стандартные настройки"
+
+#: gkl-postavatar.php:413
+msgid "Path to Images Folder:"
+msgstr "Путь к папке фото:"
+
+#: gkl-postavatar.php:415
+msgid "You must not leave this field blank. The directory also must exist."
+msgstr "Вы не должны оставить это поле пустым. Каталог также должен существовать."
+
+#: gkl-postavatar.php:419
+msgid "Display"
+msgstr "Отображать"
+
+#: gkl-postavatar.php:420
+msgid "Show image in Write Post Page?"
+msgstr "Показывать изображение на Странице Написания Постов?"
+
+#: gkl-postavatar.php:422
+msgid "Show avatar in post? Disable to use template tag"
+msgstr "Показать аватары в посте? Запретить использовать тега"
+
+#: gkl-postavatar.php:429
+msgid "Others"
+msgstr "Остальное"
+
+#: gkl-postavatar.php:430
+msgid "Scan the images directory and its sub-directories?"
+msgstr "Сканирование директорий с изображениями и суб-каталогов?"
+
+#: gkl-postavatar.php:432
+msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
+msgstr "Получить изображения. Отключите эту функцию, если вы обнаружили ошибку в getimagesize"
+
+#: gkl-postavatar.php:434
+msgid "Check here to display post avatars in your rss feeds"
+msgstr "Смотрите здесь для отображения аватара поста в вашей RSS-каналы"
+
+#: gkl-postavatar.php:440
+msgid "Customize HTML/CSS"
+msgstr "Настроить HTML/CSS"
+
+#: gkl-postavatar.php:444
+msgid "HTML"
+msgstr "HTML"
+
+#: gkl-postavatar.php:445
+msgid "Use this HTML before/after the post avatar image"
+msgstr "Используйте этот HTML до / после поста аватара"
+
+#: gkl-postavatar.php:447
+#: gkl-postavatar.php:455
+msgid "You can leave this field blank."
+msgstr "Вы можете оставить это поле пустым."
+
+#: gkl-postavatar.php:452
+msgid "CSS"
+msgstr "CSS"
+
+#: gkl-postavatar.php:453
+msgid "Use this CSS class for the post avatar image"
+msgstr "Используйте этот CSS класс для аватара поста"
+
+#: gkl-postavatar.php:460
+msgid "Save Changes"
+msgstr "Сохранить настройки"
+
