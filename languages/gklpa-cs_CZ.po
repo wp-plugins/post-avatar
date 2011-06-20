@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Avatar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-13 16:13+0800\n"
-"PO-Revision-Date: 2011-04-13 16:23+0800\n"
+"POT-Creation-Date: 2011-06-20 16:35+0800\n"
+"PO-Revision-Date: 2011-06-20 16:35+0800\n"
 "Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
 "Language-Team: Lelkoun <vydrus@klikni.cz>\n"
 "MIME-Version: 1.0\n"
@@ -15,106 +15,117 @@ msgstr ""
 "X-Poedit-Country: CZECH REPUBLIC\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: gkl-postavatar.php:198
-#: gkl-postavatar.php:627
-msgid "Post Avatar"
-msgstr "Post Avatar"
-
-#: gkl-postavatar.php:247
+#: gkl-postavatar.php:277
 msgid "Select an avatar"
 msgstr "Vybrat avatar"
 
-#: gkl-postavatar.php:254
-#: gkl-postavatar.php:290
+#: gkl-postavatar.php:283
+#: gkl-postavatar.php:315
 msgid "No Avatar selected"
 msgstr "Žádný avatar nebyl vybrán"
 
-#: gkl-postavatar.php:277
+#: gkl-postavatar.php:304
 msgid "Preview"
 msgstr "Náhled"
 
-#: gkl-postavatar.php:287
+#: gkl-postavatar.php:312
 msgid "Avatar Does Not Exist"
 msgstr "Avatar neexistuje"
 
-#: gkl-postavatar.php:342
+#: gkl-postavatar.php:378
 msgid "Post Avatar Options"
 msgstr "Post Avatar - Volby"
 
-#: gkl-postavatar.php:378
-msgid "Cheatin uh?"
-msgstr "Cheatin uh?"
+#: gkl-postavatar.php:403
+#, fuzzy
+msgid "Uh oh! You lack permissions to perform this action."
+msgstr "You lack permission to perform this action."
 
-#: gkl-postavatar.php:406
+#: gkl-postavatar.php:445
 msgid "Post Avatar Settings"
 msgstr "Posta Avatar - Nastavení"
 
-#: gkl-postavatar.php:410
+#: gkl-postavatar.php:449
 msgid "Default options"
 msgstr "Výchozí nastavení"
 
-#: gkl-postavatar.php:413
+#: gkl-postavatar.php:452
 msgid "Path to Images Folder:"
 msgstr "Cesta k adresáři obrázků"
 
-#: gkl-postavatar.php:415
+#: gkl-postavatar.php:454
 msgid "You must not leave this field blank. The directory also must exist."
 msgstr "Nesmíte nechat toto pole prázdné. Adresář musí existovat."
 
-#: gkl-postavatar.php:419
+#: gkl-postavatar.php:458
 msgid "Display"
 msgstr "Zobrazení"
 
-#: gkl-postavatar.php:420
+#: gkl-postavatar.php:459
 msgid "Show image in Write Post Page?"
 msgstr "Zobrazit obrázek na stránce s editorem příspěvku"
 
-#: gkl-postavatar.php:422
+#: gkl-postavatar.php:461
 msgid "Show avatar in post? Disable to use template tag"
 msgstr "Zobrazit obrázek v příspěvku (nevybírejte, pokud chcete použít tag v šabloně)"
 
-#: gkl-postavatar.php:429
+#: gkl-postavatar.php:468
 msgid "Others"
 msgstr "Další"
 
-#: gkl-postavatar.php:430
+#: gkl-postavatar.php:469
 msgid "Scan the images directory and its sub-directories?"
 msgstr "Scan the images directory and its sub-directories?"
 
-#: gkl-postavatar.php:432
+#: gkl-postavatar.php:471
 msgid "Get image dimensions. Disable this feature if you encounter getimagesize errors"
 msgstr "Získat rozměry obrázku. Zablokujte tuto funkci, pokud narážíte na chyby ohledně velikosti obrázku"
 
-#: gkl-postavatar.php:434
+#: gkl-postavatar.php:473
 msgid "Check here to display post avatars in your rss feeds"
 msgstr "Zobrazit avatary ve vašich RSS kanálech"
 
-#: gkl-postavatar.php:440
+#: gkl-postavatar.php:479
 msgid "Customize HTML/CSS"
 msgstr "Uživatelské HTML/CSS"
 
-#: gkl-postavatar.php:444
+#: gkl-postavatar.php:483
 msgid "HTML"
 msgstr "HTML"
 
-#: gkl-postavatar.php:445
+#: gkl-postavatar.php:484
 msgid "Use this HTML before/after the post avatar image"
 msgstr "HTML kód uzavírající obrázek v příspěvku"
 
-#: gkl-postavatar.php:447
-#: gkl-postavatar.php:455
+#: gkl-postavatar.php:486
+#: gkl-postavatar.php:494
 msgid "You can leave this field blank."
 msgstr "Toto pole můžete nechat prázdné."
 
-#: gkl-postavatar.php:452
+#: gkl-postavatar.php:491
 msgid "CSS"
 msgstr "CSS"
 
-#: gkl-postavatar.php:453
+#: gkl-postavatar.php:492
 msgid "Use this CSS class for the post avatar image"
 msgstr "CSS třída pro obrázek v příspěvku"
 
-#: gkl-postavatar.php:460
+#: gkl-postavatar.php:499
 msgid "Save Changes"
 msgstr "Uložit změny"
 
+#: gkl-postavatar.php:566
+msgid "Post Avatar"
+msgstr "Post Avatar"
+
+#: gkl-postavatar.php:625
+msgid "Use <code>remove_filter</code> to override the automatic theme display"
+msgstr "Use <code>remove_filter</code> to override the automatic theme display"
+
+#: gkl-postavatar.php:639
+#, fuzzy
+msgid "Using <code>esc_html()</code> to convert html for display in input boxes/text area"
+msgstr "Use <code>esc_html()</code> to convert html for display in input boxes/text area"
+
+#~ msgid "Cheatin uh?"
+#~ msgstr "Cheatin uh?"
