@@ -4,7 +4,7 @@ Donate link:
 Tags: post, avatars, images
 Requires at least: 2.8
 Tested up to: 3.2-RC1
-Stable tag: 1.4
+Stable tag: 1.4.1
 
 Choose an avatar from a pre-defined list to include in a post. 
 
@@ -104,6 +104,9 @@ This lets you create a array containing the url to the avatar, image height and 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/plugins/post-avatar/) for details on customizing the avatar display.
 
 == Upgrade Notice ==
+= 1.4.1
+Minor upgrade - Fix for those with image filenames with spaces e.g. "my image.jpg".
+
 = 1.4 =
 Improved security. Please save Post Avatar Settings after upgrade.
 
@@ -115,6 +118,10 @@ If you are upgrading from a previous version of Post Avatar, deactivate and acti
 
 
 == Changelog ==
+= 1.4.1 =
+(06/27/2011)
+* Fixed: Problem with error in displaying with spaces in the filename e.g. "my image.jpg" was caused by `esc_url` removing the spaces. Thanks to KDSarge for the find.
+
 = 1.4 =
 (06/20/2011)
 * Added: Improved security checks when saving post meta data and options as well as displaying data.

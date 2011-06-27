@@ -3,13 +3,13 @@
 	Plugin Name: Post Avatar
 	Plugin URI: http://www.garinungkadol.com/plugins/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. 
-	Version: 1.4
+	Version: 1.4.1
 	Author: Vicky Arulsingam
 	Author URI: http://garinungkadol.com
 	License: GPL2
 */
 
-/*  Copyright 2011 Vicky Arulsingam  (email : vix@garinungkadol.com)
+/*  Copyright 2006 - 2011 Vicky Arulsingam  (email : vix@garinungkadol.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -95,7 +95,7 @@ function gkl_postavatar($class='', $before='', $after='', $do_what= 'echo') {
 			$avatar_dim = 'width="' . intval( $post_avatar['image_width'] ) .'" height="'. intval( $post_avatar['image_height'] ) .'"';
 		}
 		
-		$post_avatar_text = $before .'<img' .$class . ' src="'.  esc_url( $post_avatar['avatar_url'] ) .'" '. $avatar_dim . ' alt="'. esc_attr( $post_avatar['post_title'] ). '" />'. $after ."\n";
+		$post_avatar_text = $before .'<img' .$class . ' src="'.  esc_url( str_replace( ' ', '%20', $post_avatar['avatar_url'] ) ) .'" '. $avatar_dim . ' alt="'. esc_attr( $post_avatar['post_title'] ). '" />'. $after ."\n";
 		// Show post avatar	
 		if( $do_what == 'echo' ) echo $post_avatar_text;
 		elseif( $do_what == 'return' ) return $post_avatar_text;
@@ -307,7 +307,7 @@ function gkl_avatar_html($AvatarList, $CurrAvatar, $selected) {
 					if ( !empty($CurrAvatar) ) {
 						if ( file_exists($gkl_myAvatarDir . $CurrAvatar) ) {
 							$CurrAvatarLoc = $gkl_AvatarURL . $CurrAvatar;
-							echo '<img id="postavatar" src="'. esc_url( $CurrAvatarLoc ) .'" alt="Avatar" />';
+							echo '<img id="postavatar" src="'. esc_url( str_replace( ' ', '%20', $CurrAvatarLoc ) ) .'" alt="Avatar" />';
 						} else {
 							echo '<img id="postavatar" src="'. plugin_dir_url( __FILE__ ) . 'images/missing_avatar.png" alt="'. __('Avatar Does Not Exist', 'gklpa') .'" />';
 						}
