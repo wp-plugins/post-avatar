@@ -3,7 +3,7 @@
 	Plugin Name: Post Avatar
 	Plugin URI: http://www.garinungkadol.com/plugins/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. 
-	Version: 1.4.1
+	Version: 1.4.3
 	Author: Vicky Arulsingam
 	Author URI: http://garinungkadol.com
 	License: GPL2
@@ -61,7 +61,7 @@ $gkl_ScanRecursive = get_option('gklpa_scanrecursive'); // Recursive scan of the
 $gkl_ShowInContent = get_option('gklpa_showincontent'); // Show avatar automatically in content?
 $gkl_getsize = get_option('gklpa_getsize'); // Use getimagesize?
 $gkl_dev_override = false;
-$gkl_pa_version = '1.4';
+$gkl_pa_version = '1.4.2';
 
 /**
  * Display post avatar within The Loop
@@ -337,13 +337,20 @@ function gkl_avatar_edit($postid) {
 	// Don't do anything if post has not been submitted
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
 		return;		
-
+		
+	// verify if this is the post revision routine
+	// Don't do anything if this is a revision
+	if ( is_int( wp_is_post_revision( $postid ) ) )
+		return;
+	
 	$key = '';	
 	if( isset( $_POST['postuserpic-key'] ) ) $key =  $_POST['postuserpic-key'];	
 	// origination and intention: Are we in Write Post?
 	if ( !wp_verify_nonce( $key, plugin_basename( __FILE__ ) ) )
 			return;	
 	
+	
+
 	// Check permissions. Will probably have to do something about allowing custom post types
 	if ( 'page' == $_POST['post_type'] ) {
 		if ( !current_user_can( 'edit_page', $postid ) )
@@ -426,7 +433,7 @@ function gkl_settings_form() {
 		else $gklpa_showinfeeds = 0;
 		
 		$gklpa_class = sanitize_html_class($_POST['gklpa_class']); // allow alphanumeric characters only
-		$gklpa_before = wp_kses( $_POST['gklpa_before'], $allowedposttags );
+		$gklpa_before = wp_kses( $_POST['gklpa_before'], $allowedposttags ); 
 		$gklpa_after = wp_kses( $_POST['gklpa_after'], $allowedposttags );
 		
 		// Save the options

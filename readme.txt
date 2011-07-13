@@ -3,8 +3,8 @@ Contributors: garinungkadol
 Donate link: 
 Tags: post, avatars, images
 Requires at least: 2.8
-Tested up to: 3.2-RC1
-Stable tag: 1.4.1
+Tested up to: 3.2.1
+Stable tag: 1.4.2
 
 Choose an avatar from a pre-defined list to include in a post. 
 
@@ -21,6 +21,7 @@ Translations:
 * Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
 * French (fr_FR) [Mathieu Haratyk](http://www.eduens.com)
 * Polish (pl_PL) [Meloniq](http://blog.meloniq.net)
+* Irish (ga_IR) Ray S.
 
 
 = Features =
@@ -104,8 +105,11 @@ This lets you create a array containing the url to the avatar, image height and 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/plugins/post-avatar/) for details on customizing the avatar display.
 
 == Upgrade Notice ==
-= 1.4.1
-Minor upgrade - Fix for those with image filenames with spaces e.g. "my image.jpg".
+= 1.4.2 =
+Added Irish translation. Fixed issue with post avatars being saved twice when post revisions are on.
+
+= 1.4.1 =
+If your image filenames have spaces, you will need to upgrade.
 
 = 1.4 =
 Improved security. Please save Post Avatar Settings after upgrade.
@@ -118,9 +122,14 @@ If you are upgrading from a previous version of Post Avatar, deactivate and acti
 
 
 == Changelog ==
+= 1.4.2 =
+(07/13/2011)
+* Added: Gaellic translation. Thanks to Ray.
+* Fixed: Exclude revisions from post avatar saving routine
+
 = 1.4.1 =
 (06/27/2011)
-* Fixed: Problem with error in displaying with spaces in the filename e.g. "my image.jpg" was caused by `esc_url` removing the spaces. Thanks to KDSarge for the find.
+* Fixed: Spaces in image filenames were being removed by `esc_url`.
 
 = 1.4 =
 (06/20/2011)
