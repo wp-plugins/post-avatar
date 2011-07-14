@@ -1,7 +1,7 @@
 ==== Post Avatar ====
 Contributors: garinungkadol
-Donate link: 
-Tags: post, avatars, images
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2N7SF4KU37D6Y
+Tags: post, avatars, images, image, thumbnail
 Requires at least: 2.8
 Tested up to: 3.2.1
 Stable tag: 1.4.2
@@ -21,7 +21,7 @@ Translations:
 * Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
 * French (fr_FR) [Mathieu Haratyk](http://www.eduens.com)
 * Polish (pl_PL) [Meloniq](http://blog.meloniq.net)
-* Irish (ga_IR) Ray S.
+* Irish (ga_IR) [Ray S.](http://letsbefamous.com)
 
 
 = Features =
