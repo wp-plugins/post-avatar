@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: post, avatars, images, image, thumbnail
 Requires at least: 2.8
 Tested up to: 3.3
-Stable tag: 1.4.2
+Stable tag: 1.4.3
 
 Choose an avatar from a pre-defined list to include in a post. 
 
