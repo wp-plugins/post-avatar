@@ -2,9 +2,9 @@
 Contributors: garinungkadol
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2N7SF4KU37D6Y
 Tags: post, avatars, images, image, thumbnail
-Requires at least: 2.8
-Tested up to: 3.3
-Stable tag: 1.4.3
+Requires at least: 3.0
+Tested up to: 3.4 beta-3
+Stable tag: 1.5
 
 Choose an avatar from a pre-defined list to include in a post. 
 
@@ -13,15 +13,15 @@ This plugin simplifies including a picture when writing posts by allowing the us
 
 Translations:
 
-* German (de_DE) [Dominik Menke](http://WordPress.gaw2006.de)
+* German (de_DE) Dominik Menke
 * Italian (it_IT) [Gianni Diurno](http://gidibao.net)
-* Belorussian (ru_RU) [Fat Cower](http://www.fatcow.com)
-* Dutch (nl_NL) [Jay August](http://www.jayaugust.com)
-* Spanish (es_ES) [gogollack](http://queestapasando.co.cc/)
+* Belorussian (ru_RU) Fat Cower
+* Dutch (nl_NL) Jay August
+* Spanish (es_ES) gogollack
 * Czech (cz_CZ) [Lelkoun](http://lelkoun.cz)
 * French (fr_FR) [Mathieu Haratyk](http://www.eduens.com)
 * Polish (pl_PL) [Meloniq](http://blog.meloniq.net)
-* Irish (ga_IR) [Ray S.](http://letsbefamous.com)
+* Irish (ga_IR) Ray S.
 
 
 = Features =
@@ -41,8 +41,6 @@ Please visit the [Post Avatar home page](http://garinungkadol.com/plugins/post-a
 4. Activate the plugin from the Plugin Management screen.
 5. Set plugin options in Settings - Post Avatar. 
 	* **Path to Images Folder** - location of your images folder in relation to your WordPress installation.
-
-	* **Show image in Write Post Page** - Place a tick mark if you want to see a thumbnail of the post avatar in the Write Post screen.
 
 	* **Scan the images directory and its sub-directories** - Place a tick mark if you want to list all images including those in sub-directories of the image folder.
 
@@ -92,7 +90,9 @@ For improved integration with third-party WordPress themes, Post Avatar has two 
 
 **OVERRIDE AUTOMATIC DISPLAY OF POST AVATARS
 
-In case users automatic display of avatars is set to, use the [remove_filter()](http://codex.wordpress.org/Function_Reference/remove_filter)
+To override the option to display avatars automatically, use [remove_filter()](http://codex.wordpress.org/Function_Reference/remove_filter) like so:
+`remove_filter('the_content', 'gkl_postavatar_filter', 99 );`
+`remove_filter('the_excerpt', 'gkl_postavatar_filter', 99 );`
 
 
 **CUSTOM OUTPUT
@@ -105,6 +105,9 @@ This lets you create a array containing the url to the avatar, image height and 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/plugins/post-avatar/) for details on customizing the avatar display.
 
 == Upgrade Notice ==
+= 1.5 =
+Fixed performance issue when image folder is missing and general improvements. 
+
 = 1.4.2 =
 Added Irish translation. Fixed issue with post avatars being saved twice when post revisions are on.
 
@@ -122,6 +125,16 @@ If you are upgrading from a previous version of Post Avatar, deactivate and acti
 
 
 == Changelog ==
+= 1.5 =
+(05/11/2012)
+* Fixed: Performance issue resulting in "Maximum execution time" errors or slow loading page or footer scripts not working properly. Bug was caused by missing image folder.
+* Revised: Change the hook where stylesheets are included. Using `wp_enqueue_scripts` instead of `wp_print_styles`
+* Revised: Using `wp_localize_script() for JavaScript variables. Removed `gkl_admin_head()`.
+* Revised: Logic change for enqueing of scripts in `gkl_display_css()`.
+* Revised: Moved loading of plugin text domain to `gkl_init()`
+* Added: `esc_attr()` to all settings 
+* Removed: option 'gklpa_showinwritepage'. Unnecessary option.
+
 = 1.4.2 =
 (07/13/2011)
 * Added: Gaellic translation. Thanks to Ray.
@@ -164,11 +177,6 @@ If you are upgrading from a previous version of Post Avatar, deactivate and acti
 (02/12/2010)
 * Fixed: IE preview problems when reselecting an image. Thanks [spedney](http://wordpress.org/support/topic/305900)
 * Fixed: removed border="0" in image display for XHTML compliance. Thanks [Jay August](http://wordpress.org/support/topic/352564)
-
-= 1.2.5.5 =
-(08/21/2009)
-* Added: Dutch translation. Thanks to [Jay August](http://www.jayaugust.com).
-
 
 = 1.2.5.4 =
 (08/21/2009)
