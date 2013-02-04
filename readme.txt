@@ -3,8 +3,8 @@ Contributors: garinungkadol
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2N7SF4KU37D6Y
 Tags: post, avatars, images, image, thumbnail
 Requires at least: 3.0
-Tested up to: 3.4 beta-3
-Stable tag: 1.5
+Tested up to: 3.5.1
+Stable tag: 1.5.1
 
 Choose an avatar from a pre-defined list to include in a post. 
 
@@ -105,6 +105,9 @@ This lets you create a array containing the url to the avatar, image height and 
 Please visit the [Post Avatar Page](http://www.garinungkadol.com/plugins/post-avatar/) for details on customizing the avatar display.
 
 == Upgrade Notice ==
+= 1.5.1 =
+Minor revision to improve SEO for image alt tags. Upgrade optional.
+
 = 1.5 =
 Fixed performance issue when image folder is missing and general improvements. 
 
@@ -125,6 +128,10 @@ If you are upgrading from a previous version of Post Avatar, deactivate and acti
 
 
 == Changelog ==
+= 1.5.1 =
+(02/04/2013)
+* Fixed: Improved SEO for alt tag by removing titles with dashes. Now uses escaped text.
+
 = 1.5 =
 (05/11/2012)
 * Fixed: Performance issue resulting in "Maximum execution time" errors or slow loading page or footer scripts not working properly. Bug was caused by missing image folder.
@@ -243,5 +250,3 @@ If you are upgrading from a previous version of Post Avatar, deactivate and acti
 = 1.0 = 
 (08/26/2006)
 * Initial release
-
-

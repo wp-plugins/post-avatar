@@ -3,13 +3,13 @@
 	Plugin Name: Post Avatar
 	Plugin URI: http://www.garinungkadol.com/plugins/post-avatar/
 	Description: Attach a picture to posts easily by selecting from a list of uploaded images. Similar to Livejournal Userpics. 
-	Version: 1.5
+	Version: 1.5.1
 	Author: Vicky Arulsingam
 	Author URI: http://garinungkadol.com
 	License: GPL2
 */
 
-/*  Copyright 2006 - 2012 Vicky Arulsingam  (email : vix@garinungkadol.com)
+/*  Copyright 2006 - 2013 Vicky Arulsingam  (email : vix@garinungkadol.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -116,7 +116,7 @@ function gkl_get_postavatar($post) {
 
 	// Return nothing if value is empty or file does not exist
 	if ( !empty($CurrAvatar) && file_exists($CheckAvatar) ) {
-		$post_title = sanitize_title($post->post_title);
+		$post_title = esc_attr(strip_tags($post->post_title) );
 		$CurrAvatarLoc = $gkl_AvatarURL . $CurrAvatar;
 
 		if ( $CurrAvatarLoc != $gkl_AvatarURL ) {
