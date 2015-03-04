@@ -3,7 +3,7 @@ Contributors: garinungkadol
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2N7SF4KU37D6Y
 Tags: post, avatars, images, image, thumbnail
 Requires at least: 3.0
-Tested up to: 3.5.1
+Tested up to: 4.0
 Stable tag: 1.5.1
 
 Choose an avatar from a pre-defined list to include in a post. 
