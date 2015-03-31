@@ -2,11 +2,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Avatar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-28 15:52+0800\n"
-"PO-Revision-Date: 2015-03-28 15:53+0800\n"
+"POT-Creation-Date: 2015-03-28 15:58+0800\n"
+"PO-Revision-Date: 2015-03-28 15:59+0800\n"
 "Last-Translator: Vicky Arulsingam <vix@garinungkadol.com>\n"
-"Language-Team: Dominik Menke <dominik.menke@gmail.com>\n"
-"Language: de_DE\n"
+"Language-Team: Borisa Djuraskovic | http://www.webhostinghub.com/ "
+"<borisad@webhostinghub.com>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,18 +18,17 @@ msgstr ""
 "X-Poedit-SearchPath-1: ..\n"
 
 #: ../deprecated.php:38
-#, fuzzy
 msgid "Use <code>remove_filter</code> to override the automatic theme display"
-msgstr "Use <code>remove_filter</code> to override the automatic theme display"
+msgstr ""
+"Koristite<code> remove_filter</code> za pisanje preko automackog prikaza teme"
 
 #: ../deprecated.php:54
-#, fuzzy
 msgid ""
 "Using <code>esc_html()</code> to convert html for display in input boxes/"
 "text area"
 msgstr ""
-"Use <code>esc_html()</code> to convert html for display in input boxes/text "
-"area"
+"Koristite <code>esc_html()</code>  za konvertovanje html za prikaz inputa "
+"kutija/tekst područja"
 
 #: ../deprecated.php:73
 #, fuzzy
@@ -41,34 +41,34 @@ msgid "Use absint() instead"
 msgstr "Use absint() instead"
 
 #: ../gkl-postavatar.php:258
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "<p>Whoops! The folder \"<strong>%1$s</strong>\" does not exist. Please go to "
 "Settings >> Post Avatar to set the correct location.</p>"
 msgstr ""
-"<p>Whoops! The folder \"<strong>%1$s</strong>\" does not exist. Please go to "
-"Settings >> Post Avatar to set the correct location.</p>"
+"<p>Ups! Ovaj folder \"<strong>%1$s</strong>\" ne postoji. Idite na "
+"Postavke>> Post Avatar da biste namestili odgovarajuću lokaciju</p>"
 
 #: ../gkl-postavatar.php:293
 msgid "Select an avatar"
-msgstr "W&auml;hle einen Avatar f&uuml;r diesen Beitrag"
+msgstr "Izaberite avatara"
 
 #: ../gkl-postavatar.php:299 ../gkl-postavatar.php:333
 #: ../gkl-postavatar.php:569
 msgid "No Avatar selected"
-msgstr "Es wurde kein Avatar ausgew&auml;hlt."
+msgstr "Avatar nije izabran"
 
 #: ../gkl-postavatar.php:320
 msgid "Preview"
-msgstr "Vorschau"
+msgstr "Pregled"
 
 #: ../gkl-postavatar.php:326
 msgid "Avatar"
-msgstr "Post-Avatar"
+msgstr "Post Avatar"
 
 #: ../gkl-postavatar.php:329
 msgid "Avatar Does Not Exist"
-msgstr "existiert nicht."
+msgstr "Avatar ne postoji"
 
 #: ../gkl-postavatar.php:443
 #, fuzzy
@@ -77,32 +77,32 @@ msgstr "This plugin requires WordPress version 3.9 or higher."
 
 #: ../gkl-postavatar.php:495 ../settings.php:13
 msgid "Post Avatar"
-msgstr "Post-Avatar"
+msgstr "Post Avatar"
 
 #: ../settings.php:13
 msgid "Post Avatar Options"
-msgstr "Post-Avatar-Optionen"
+msgstr "Post Avatar opcije"
 
 #: ../settings.php:26
-#, fuzzy
 msgid "Default Options"
-msgstr "Default options"
+msgstr "Default optiocije"
 
 #: ../settings.php:27
+#, fuzzy
 msgid "Customize HTML/CSS"
 msgstr "Customize HTML/CSS"
 
 #: ../settings.php:32
 msgid "Path to Images Folder:"
-msgstr "Pfad zu den Avatar-Bildchen"
+msgstr "Put do foldera sa slikama:"
 
 #: ../settings.php:34
 msgid "Display:"
-msgstr "Display"
+msgstr "Prikaži"
 
 #: ../settings.php:36
 msgid "Others:"
-msgstr "Others"
+msgstr "Ostalo"
 
 #: ../settings.php:41
 msgid "HTML:"
@@ -113,54 +113,46 @@ msgid "CSS:"
 msgstr "CSS"
 
 #: ../settings.php:59
-#, fuzzy
 msgid "You must not leave this field blank. The directory also must exist."
-msgstr "You must not leave this field blank. The directory also must exist."
+msgstr ""
+"Ne smete da ostavite ovo polje prazno. Direktorijum mora da postoji takodje."
 
 #: ../settings.php:76
-#, fuzzy
 msgid "Show avatar in post? Disable to use template tag"
-msgstr "Show avatar in post? Disable to use template tag"
+msgstr "Prikaži avatara u postu? Onemogući upotrebu tagovanja template-a"
 
 #: ../settings.php:94
-#, fuzzy
 msgid "Scan the images directory and its sub-directories?"
-msgstr "Scan the images directory and its sub-directories?"
+msgstr "Skeniraj direktorijum sa slikama i njegove pod direktorijume?"
 
 #: ../settings.php:97
-#, fuzzy
 msgid ""
 "Get image dimensions? Disable this feature if you encounter getimagesize "
 "errors"
 msgstr ""
-"Get image dimensions. Disable this feature if you encounter getimagesize "
+"Saznaj dimenzije slike. Onemogući ovu funkciju ako naidjete na getimagesize "
 "errors"
 
 #: ../settings.php:100
-#, fuzzy
 msgid "Show post avatars in RSS feeds?"
-msgstr "Check here to display post avatars in your rss feeds"
+msgstr "Čekirati zaza prikaz avatara u vašim rss feedovima"
 
 #: ../settings.php:119
-#, fuzzy
 msgid "Use this HTML before/after the post avatar image"
-msgstr "Use this HTML before/after the post avatar image"
+msgstr "Koristi ovaj HTML pre/posle postovanja slike avatara"
 
 #: ../settings.php:122 ../settings.php:140
-#, fuzzy
 msgid "You can leave this field blank."
-msgstr "You can leave this field blank."
+msgstr "Ovo polje može da ostane prazno"
 
 #: ../settings.php:138
-#, fuzzy
 msgid "Use this CSS class for the post avatar image"
-msgstr "Use this CSS class for the post avatar image"
+msgstr "Koristite ovu CSS klasu za postovanje slike avatara "
 
 #: ../settings.php:179
 msgid "Post Avatar Settings"
-msgstr "Post-Avatar-Optionen"
+msgstr "Post Avatar postavke"
 
 #: ../settings.php:184
-#, fuzzy
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "Sačuvaj promene"

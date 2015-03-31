@@ -9,9 +9,14 @@ function chPostAvatar() {
 }
 
 function nextPostAvatar() {	
-	if (document.getElementById('postuserpic').selectedIndex < document.getElementById('postuserpic').length) {
+	var list_count = document.getElementById('postuserpic').length - 1;
+	
+	if (document.getElementById('postuserpic').selectedIndex < list_count) {
 		document.getElementById('postuserpic').selectedIndex++;
+	} else {
+		document.getElementById('postuserpic').selectedIndex = 1;
 	}
+	
 	if ( document.getElementById('postuserpic').options[document.getElementById('postuserpic').selectedIndex].text == gkl_postavatar_text.noavatar_msg )
 		document.getElementById('postavatar').src = gkl_postavatar_text.avatar_img + '/no_avatar.png';
 	else
@@ -20,8 +25,11 @@ function nextPostAvatar() {
 }
 
 function prevPostAvatar() {
+	var list_count = document.getElementById('postuserpic').length - 1;
 	if (document.getElementById('postuserpic').selectedIndex > 1) {
 		document.getElementById('postuserpic').selectedIndex--;
+	} else {
+		document.getElementById('postuserpic').selectedIndex = list_count;
 	}
 	if ( document.getElementById('postuserpic').options[document.getElementById('postuserpic').selectedIndex].text == 'No Avatar selected' )
 		document.getElementById('postavatar').src = gkl_postavatar_text.avatar_img + '/no_avatar.png';
